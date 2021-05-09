@@ -1,0 +1,30 @@
+@base <https://laurentfintoni.github.io/jayinlodee/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo>.
+@prefix schema: <http://schema.org/>.
+@prefix owl: <https://www.w3.org/TR/owl2-syntax#>.
+@prefix mo: <http://purl.org/ontology/mo/>.
+
+<items_data.html#Welcome2Detroit>
+    mo:publisher "BBE";
+    crm:P129_is_about "Rap (music), soul music";
+    crm:P2_has_type	"sound recording-musical";
+    schema:MusicReleaseFormatType "CDFormat";
+    schema:releaseDate "2001";
+    dcterms:description "sound disc, digital, 4 3/4 in";
+    crm:P50_has_current_keeper "Library of Congress";
+    crm:P67_refers_to "Detroit";
+    mo:producer	"James Dewitt Yancey";
+    crm:P102_has_title "Welcome 2 Detroit";
+    frbroo:R10_is_member_of	"Jay Dee discography";
+    crm:P7_took_place_at "Detroit";
+    dcterms:isPartOf	"Beat Generation";
+    mo:performer "Jay Dee aka J Dilla";
+    mo:engineer	"J Dilla";
+    mo:engineer	"Todd Fairall";
+    mo:genre "hip-hop";
+    dcterms:identifier "2015616941";
+    dcterms:spatial "London";
+    mo:discogs <https://www.discogs.com/J-Dilla-Welcome-2-Detroit/release/13520338>;
+    owl:sameAs <https://lccn.loc.gov/2015616941>.
