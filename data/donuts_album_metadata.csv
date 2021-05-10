@@ -1,0 +1,21 @@
+﻿Subject,Predicate,Object
+Donuts,mo:publisher,Stones Throw 
+Donuts,crm:P129_is_about,"popular instrumental music, rap (music)"
+Donuts,crm:P2_has_type,audio
+Donuts,schema:MusicReleaseFormatType,VinylFormat
+Donuts,schema:releaseDate,2006
+Donuts,dc:description,"audio discs, analog, 33 1/3 rpm, stereo ; 12 in"
+Donuts,crm:P50_has_current_keeper,St Paul Public Library
+Donuts,crm:P67_refers_to,autoimmune disease
+Donuts,mo:performer,J Dilla
+Donuts,mo:producer,James Dewitt Yancey
+Donuts,crm:P102_has_title,Donuts
+Donuts,frbroo:R10_is_member_of,J Dilla discography
+Donuts,crm:P7_took_place_at,Los Angeles
+Donuts,mo:engineer,Dave Cooley
+Donuts,dc:identifier,"""659457212612"""
+Donuts,dc:description,Recorded during an extended hospital stay 2005.
+Donuts,mo:genre,"rap (music), songs without words (instrumental music)"
+Donuts,mo:discogs,https://www.discogs.com/J-Dilla-Donuts/release/619872
+Donuts,owl:sameAs,https://alpha.stpaul.lib.mn.us/record=b2590835~S16
+,,

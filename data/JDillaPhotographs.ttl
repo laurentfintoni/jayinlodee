@@ -1,0 +1,35 @@
+@base <https://laurentfintoni.github.io/jayinlodee/>.
+@prefix Iptc4xmpExt: <https://www.iptc.org/std/Iptc4xmpCore/1.0/xmlns/>.
+@prefix Iptc4xmpCore: <https://www.iptc.org/std/Iptc4xmpCore/1.0/xmlns/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm#>.
+@prefix photoshop: <http://ns.adobe.com/photoshop/1.0/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix schema: <http://schema.org/>.
+@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix skos: <https://www.w3.org/2009/08/skos-reference/skos.html>.
+@prefix rdfs: <https://www.w3.org/TR/rdf-schema#>.
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+
+<RDF.html#JDillaPhotographs>
+	Iptc4xmpExt:PersonInImage <RDF.html#JamesDewittYancey>;
+	Iptc4xmpExt:LocationCreated <RDF.html#Detroit>;
+	dcterms:creator <RDF.html#BrianCross>;
+	crm:P2_has_type <https://dbpedia.org/page/Contact_print>;
+	rdf:type frbroo:F2_Expression;
+	skos:exactMatch crm:E36_Visual_Item;
+	crm:P49_has_former_keeper <http://viaf.org/viaf/295680384>; #Annenberg
+	dcterms:isPartOf <https://dbpedia.org/page/Contact_High:_A_Visual_History_of_Hip-Hop>; #exhibition
+	photoshop:DateCreated "2003"^^xsd:gYear;
+	foaf:primaryTopic <https://viaf.org/viaf/32244000/>; #Jay VIAF
+	dcterms:title "J Dilla, Detroit, 2003";
+	photoshop:AuthorsPosition <http://vocab.getty.edu/page/aat/300025687>; #photographer
+	photoshop:Credit "Brian B+ Cross";
+	photoshop:Source <RDF.html#BrianCross>;
+	photoshop:Source <RDF.html#StonesThrow>;
+	Iptc4xmpExt:LocationShown "J Dilla's home studio";
+	Iptc4xmpCore:IntellectualGenre <https://id.loc.gov/authorities/subjects/sh99001681.html>; #portrait
+	Iptc4xmpExt:Event "Photoshoot for Jaylib album, commissioned by Stones Throw.";
+	schema:image <https://www.annenbergphotospace.org/wp-content/uploads/2019/04/brian-cross-fp-1-3.jpg>;
+	rdfs:seeAlso <https://www.annenbergphotospace.org/person/brian-b-cross/>.

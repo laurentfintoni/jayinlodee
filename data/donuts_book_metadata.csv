@@ -1,0 +1,21 @@
+﻿Subject,Predicate,Object
+Donuts,dc:publisher,Bloomsbury 
+Donuts,crm:P50_has_current_keeper,Library of Congress
+Donuts,frbroo:R28_was_produced_by,production of copies of original manuscript
+Donuts,crm:P102_has_title,Donuts by Jordan Ferguson
+Donuts,crm:P2_has_type,text
+Donuts,dc:description,"print, unmediated, volume"
+Donuts,crm:P129_is_about,"criticism and interpretation, hip-hop"
+Donuts,dc:isPartOf,33 1/3
+Donuts,dc:creator,Jordan Ferguson
+Donuts,schema:releaseDate,2014
+Donuts,crm:P67_refers_to,Stones Throw
+Donuts,crm:P67_refers_to,Donuts (album)
+Donuts,crm:P67_refers_to,autoimmune disease
+Donuts,foaf:primaryTopic,James Dewitt Yancey
+Donuts,dbo:numberOfPages,136 pages
+Donuts,dcterms:spatial,New York
+Donuts,dc:identifier,2013046268
+Donuts,dc:identifier,"""9781623561833"""
+Donuts,owl:sameAs,https://lccn.loc.gov/2013046268 
+,,

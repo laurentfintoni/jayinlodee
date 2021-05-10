@@ -1,0 +1,22 @@
+{
+  "@context": "http://schema.org/",
+  "id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#StudioA",
+  "dct:date": "1980",
+  "dct:description": "recording, mixing and mastering studio",
+  "http://purl.org/ontology/mo/discogs": {
+    "id": "https://www.discogs.com/label/487496-Studio-A-Dearborn-Heights-MI"
+  },
+  "http://www.cidoc-crm.org/cidoc-crm#P102_has_title": "Studio A Recording Inc",
+  "http://www.cidoc-crm.org/cidoc-crm#P107_has_current_member": "Todd Fairall",
+  "http://www.cidoc-crm.org/cidoc-crm#P2_has_type": "business",
+  "http://www.cidoc-crm.org/cidoc-crm#P52_has_current_owner": "Eric, Marilyn Morgeson",
+  "http://www.cidoc-crm.org/cidoc-crm#P53_has_current_location": "Dearborn, Michigan",
+  "http://www.cidoc-crm.org/cidoc-crm#P67_is_referred_to_by": [
+    "Welcome 2 Detroit",
+    "Our Vinyl Weighs a Ton"
+  ],
+  "http://www.cidoc-crm.org/cidoc-crm#P7_witnessed": "James Dewitt Yancey's use of studio for recording purposes",
+  "https://www.w3.org/TR/owl2-syntax#sameAs": {
+    "id": "https://www.discogs.com/label/487496-Studio-A-Dearborn-Heights-MI"
+  }
+}

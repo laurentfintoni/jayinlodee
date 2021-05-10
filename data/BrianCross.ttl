@@ -1,0 +1,33 @@
+@base <https://laurentfintoni.github.io/jayinlodee/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm#>.
+@prefix owl: <https://www.w3.org/TR/owl2-syntax#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix core: <https://www.bbc.co.uk/ontologies/coreconcepts/>.
+@prefix dbo: <https://dbpedia.org/ontology/>.
+@prefix mo: <http://purl.org/ontology/mo/>.
+@prefix rdfs: <https://www.w3.org/TR/rdf-schema#>.
+
+<RDF.html#BrianCross>
+	rdf:type foaf:Person;
+	foaf:name "Brian Cross";
+	crm:P1_is_identified_by "B+";
+	foaf:gender "Male";
+	person:placeOfBirth <https://dbpedia.org/page/Limerick>;
+	person:citizenship "Ireland";
+	core:dateOfBirth "1966"^^xsd:gYear;
+	core:occupation "Music, culture";
+	core:knownFor "Photography, documentation, working with artists including Eazy-E, J Dilla, DJ Shadow, and Damian Marley.";
+	dbo:occupation <http://vocab.getty.edu/aat/300025695>; #photojournalist 
+	owl:sameAs <http://viaf.org/viaf/71486769>;
+	rdfs:seeAlso <https://bplus.photography/bio>;
+	foaf:knows <#JamesDewittYancey>;
+	crm:P14_performed <RDF.html#JDillaPhotographs>;
+	crm:P107_is_current_member_of "Mochilla";
+	mo:produced <items_data.html#SuiteForMaDukes>; 
+	mo:discogs <https://www.discogs.com/artist/1464782-Brian-Cross-2>;
+	schema:image <https://thecarverystudio.com/wp-content/uploads/2020/06/BrianCross_LA_web-1024x683.jpg>.

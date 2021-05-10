@@ -1,0 +1,31 @@
+{
+  "@context": "http://schema.org/",
+  "id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#Welcome2Detroit",
+  "http://iflastandards.info/ns/fr/frbr/frbrooR10_is_member_of": "Jay Dee discography",
+  "dct:description": "sound disc, digital, 4 3/4 in",
+  "dct:identifier": "2015616941",
+  "dct:isPartOf": "Beat Generation",
+  "dct:spatial": "London",
+  "http://purl.org/ontology/mo/discogs": {
+    "id": "https://www.discogs.com/J-Dilla-Welcome-2-Detroit/release/13520338"
+  },
+  "http://purl.org/ontology/mo/engineer": [
+    "J Dilla",
+    "Todd Fairall"
+  ],
+  "http://purl.org/ontology/mo/genre": "hip-hop",
+  "http://purl.org/ontology/mo/performer": "Jay Dee aka J Dilla",
+  "http://purl.org/ontology/mo/producer": "James Dewitt Yancey",
+  "http://purl.org/ontology/mo/publisher": "BBE",
+  "MusicReleaseFormatType": "CDFormat",
+  "schema:releaseDate": "2001",
+  "http://www.cidoc-crm.org/cidoc-crm#P102_has_title": "Welcome 2 Detroit",
+  "http://www.cidoc-crm.org/cidoc-crm#P129_is_about": "Rap (music), soul music",
+  "http://www.cidoc-crm.org/cidoc-crm#P2_has_type": "sound recording-musical",
+  "http://www.cidoc-crm.org/cidoc-crm#P50_has_current_keeper": "Library of Congress",
+  "http://www.cidoc-crm.org/cidoc-crm#P67_refers_to": "Detroit",
+  "http://www.cidoc-crm.org/cidoc-crm#P7_took_place_at": "Detroit",
+  "https://www.w3.org/TR/owl2-syntax#sameAs": {
+    "id": "https://lccn.loc.gov/2015616941"
+  }
+}

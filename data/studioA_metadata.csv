@@ -1,0 +1,18 @@
+﻿,,
+,,
+,,
+,,
+Subject,Predicate,Object
+Studio A ,crm:P7_witnessed,James Dewitt Yancey's use of studio for recording purposes
+Studio A ,crm:P107_has_current_member,Todd Fairall
+Studio A ,crm:P67_is_referred_to_by,Welcome 2 Detroit
+Studio A ,crm:P67_is_referred_to_by,Our Vinyl Weighs a Ton
+Studio A ,dc:date,1980
+Studio A ,crm:P53_has_current_location,"Dearborn, Michigan"
+Studio A ,crm:P2_has_type,business
+Studio A ,dc:description,"recording, mixing and mastering studio "
+Studio A ,crm:P102_has_title,Studio A Recording Inc
+Studio A ,crm:P52_has_current_owner,"Eric, Marilyn Morgeson"
+Studio A ,mo:discogs,https://www.discogs.com/label/487496-Studio-A-Dearborn-Heights-MI
+Studio A ,owl:sameAs,https://www.discogs.com/label/487496-Studio-A-Dearborn-Heights-MI
+,,

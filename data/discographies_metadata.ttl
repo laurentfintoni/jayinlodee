@@ -1,0 +1,35 @@
+@base <https://laurentfintoni.github.io/jayinlodee/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo>.
+@prefix schema: <http://schema.org/>.
+@prefix owl: <https://www.w3.org/TR/owl2-syntax#>.
+@prefix mo: <http://purl.org/ontology/mo/>.
+@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix mmd: <http://musicbrainz.org/ns/mmd-1.0#>.
+
+<items_data.html#Discographies>
+    frbroo:R16_was_initiated_by	"James Dewitt Yancey's production work as J Dilla";
+    frbroo:R16_was_initiated_by	"James Dewitt Yancey's production work as Jay Dee";
+    crm:P4_has_time-span "2001-present";
+    crm:P4_has_time-span "1995-2007";
+    dcterms:creator "James Dewitt Yancey";
+    frbroo:R64_used_name "J Dilla";
+    frbroo:R64_used_name "Jay Dee";
+    frbroo:R10_has_member "Donuts (album(";
+    frbroo:R10_has_member "Welcome 2 Detroit";
+    crm:P102_has_title "J Dilla discography";
+    crm:P102_has_title "Jay Dee discography";
+    mo:discography <https://musicbrainz.org/artist/cbcbb22c-3a8d-46af-b4ba-09c98f0d7931>;
+    mo:discography <https://musicbrainz.org/artist/439591a7-045d-4f90-86e0-40100506bafd>;
+    rdf:type "web page";
+    mmd:begin-area "Detroit";
+    mmd:end-area "Los Angeles";
+    mo:genre "hip-hop, experimental, soul, instrumental";
+    mmd:artist_id "cbcbb22c-3a8d-46af-b4ba-09c98f0d7931";
+    mmd:artist_id "439591a7-045d-4f90-86e0-40100506bafd";
+    crm:P67_refers_to "Jaylib, Slum Village, 1st Down, J-88, The Soulquarians, The Ummah";
+    mo:discogs <https://www.discogs.com/artist/324866-J-Dilla>;
+    mo:discogs <https://www.discogs.com/artist/33373-Jay-Dee>;
+    owl:sameAs <https://musicbrainz.org/artist/cbcbb22c-3a8d-46af-b4ba-09c98f0d7931>;
+    owl:sameAs <https://musicbrainz.org/artist/439591a7-045d-4f90-86e0-40100506bafd>.

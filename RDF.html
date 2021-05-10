@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A description of the contact sheet of J Dilla photographs and related entities in RDF and a graph visualisation.">
+  <meta name="author" content="Laurent Fintoni">
+  <title>RDF - Jay in LODee</title>
+  
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  
+  <!-- Custom styles for this template -->
+  <link href="css/jaydeelod.css" rel="stylesheet">
+  
+  <!-- Animation CSS-->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body class="d-flex h-100 text-black bg-light bg-gradient">
+  <div class="container d-flex w-100 h-100 p-3 flex-column">
+    <header class="mb-auto">
+      <nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="navbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#jaynavbar" aria-controls="jaynavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-md-center" id="jaynavbar">
+            <a class="navbar-brand" href="index.html">Jay In LODee</a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="domain.html">Domain</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false" href="#">Items</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                  <li><a class="dropdown-item" href="items.html">Selection</a></li>
+                  <li><a class="dropdown-item" href="items_alignment.html">Alignment</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="models.html" tabindex="-1">Models</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="dropdown2" aria-current="page" data-bs-toggle="dropdown" aria-expanded="false">Data</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                  <li><a class="dropdown-item" href="items_data.html">Items</a></li>
+                  <li><a class="dropdown-item" href="RDF.html">RDF</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="mx-auto py-md-3">
+        <div class="shadow-lg p-4 mb-2 bg-body rounded">
+          <h4 class="animate__animated animate__slideInLeft d-flex justify-content-center pb-3">More RDF Data (this time entities!) and URIs</h4>
+          <p>The last step of the project asked us to choose one item and to mint URIs representing all its entities, and then to link all those together through the who/where/when/what perspective in an RDF file. As per the requirements, the described item and its related entities were connected to other items and entities wherever possible (within and without the domain) as well as to relevant authorities and resources using a variety of semantic associations.</p>
+          <p>I chose the photographs as the item to work on, as it is the only one that doesn't currently exist in any catalogue. I minted URIs for it and its four most important entities - Brian Cross (creator), Stones Throw (commissioner), James Dewitt Yancey (subject), Detroit (location). These were all in turn related to the other items already described (and minted). I created a <a href="data/JayInLODee.ttl" target="_blank">Turtle</a> and a <a href="data/JayInLODee.jsonld" target="_blank">JSON-LD</a> file that contain all five linked RDF description, as well as a visualisation in graph. Separate Turtle and JSON-LD files for each entity are also available below. Each entity has also been minted using using the same mechanism as the items and their RDF data is displayed using GitHub gists (instead of tables).</p>
+          
+          <h4 class="d-flex justify-content-center pb-3">J Dilla Photographs and related entities in RDF</h4>
+          <!-- Button trigger modal RDF -->
+
+          <div class="d-grid gap-2 col-6 mx-auto pb-3">
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#JDillaPhotographsRDF">View RDF</button>
+          </div>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="JDillaPhotographsRDF" data-bs-keyboard="true" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <script src="https://gist.github.com/laurentfintoni/35a324286d164431bb3a72f561355964.js"></script>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="d-flex justify-content-center pb-3">J Dilla Photographs and related entities in graph format</h4>
+          
+          <!-- Button trigger modal graph -->
+
+          <div class="d-grid gap-2 col-6 mx-auto pb-3">
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#JDillaPhotographsGraph">View Graph</button>
+          </div>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="JDillaPhotographsGraph" data-bs-keyboard="true" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <div class="container pb-3">
+                    <a href="data/JayInLODee_graph.svg" target="_blank"><img src="data/JayInLODee_graph.svg" class="img-fluid rounded" alt="graphical representation of RDF data"></a></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="d-flex justify-content-center pb-3">And a conclusion, of sorts</h4>
+          
+          <!-- Button trigger modal graph -->
+
+          <div class="d-grid gap-2 col-6 mx-auto pb-3">
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#JayInLODeeConclusion">Read conclusion</button>
+          </div>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="JayInLODeeConclusion" data-bs-keyboard="true" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <p>A conclusion wasn't a requirement of the project but as I got further into it I accumulated more thoughts and ideas that I want to put somewhere, even if only so I can revisit them as I continue this course and my work in and around LOD and LAM. Also an academic project without a conclusion feels weird?</p>
+                  <p>Returning to the points I made in the domain study, the lack of diversity around items is I think one of the important take-aways from this exercise. As it relates to Yancey it's not that there isn't a diversity of items, but rather what is publicly available isn't diverse. As mentioned in the introduction the legal side of his legacy is somewhat complicated - involving an estate and separate foundations. This has led to a lot of important items and pieces of Yancey's history to be sold for profit or monetized in some way, including eBay auctions of records and post-humous albums. Maureen's donation to the Smithsonian is the one bright note for now and as far as I can tell it's probably tied to the discovery of a locker in Detroit that contained a vast amount of Yancey's records and other items, incuding the Minimoog. Partial documentation of what was found in this locker came out online at the time but it's hard to say what has already been sold, or even exactly what was in there. I spoke with Eothen Alapatt during my early research for this. Alapatt is the creative director of the estate and worked closely with Yancey in his last years. He told me that the estate itself has little in the way of artifacts or items. The bulk of their work focuses on monetising Yancey's creative IPs to bring the estate out of debt (and back to the family). In 2016, they issued his lost album for which there exists physical tapes that have just as much historical value as the MPC and Minimoog (if not more). Lastly, in 2019 a close friend and collaborator of Yancey, Waajeed, exhibited a collection of photos he took between 1997 and 1999 that document Yancey's work within the music industry in NYC under the alias John Doe, a period that remains poorly detailed. Again these are the kinds of item that warrant preservation and documentation. </p>
+                  <p>Regarding the usefulness of LOD approaches to something like Yancey's legacy - and in turn to the wider idea of modern music archiving - doing the modelling got me thinking a lot about how this could be useful in building data that can in turn be used for visualisation, search, and other digital applications (like museum exhibits). Thinking about the discography, you could arguably attempt to build a full ontological map/model of his output, relating to people he sampled, people he collaborated with, labels, etc... There has been some visualisation of Yancey's sampling work but this is an area that feels full of potential considering the importance of sampling to modern music. An important note regarding sampling - any such efforts need to also take into account the dangers associated with revealing too much of what was sampled considering the current state of copyright laws as well as the desire by artists to perhaps not have the secret behind their work be too deeply detailed.                     
+                  </p>There is a lot more to be said and to be honest I'm still learning, reading, and digesting. I do however want to end by touching on some invigorating ideas I came across in Megan Ward and Adrian S. Wisnicki's "The Archive After Theory", from <a href="https://dhdebates.gc.cuny.edu/read/untitled-f2acf72c-a469-49d8-be35-67f9ac1e3a60/section/a8eccb81-e950-4760-ba93-38e0b1f2b9d0#ch18" target="_blank">Debates in the Digital Humanities 2019</a>. When I think of modern music history archives, I think of something that isn't like the archives of old, that isn't tied to the past, isn't driven by a white, euro-centric view of culture, heritage, and art. Modern music, in particular hip-hop and electronic music, have taught me to be dynamic, reflexive, and contributive. That is what should be reflected in any effort to capture the historical importance of these modern music movements and people like Yancey who helped make them so vibrant and inspiring. As Ward and Wisnicki put it, reflecting on efforts at archival disruption, any such approach must "ask archives not only to react to the past but also to engage with a different sort of activity altogether: to build archives that imagine the future as well as preserve the past."
+                  <p>
+                    If you made it this far thank you for reading! If you want to talk more you can find me online (I'm the only person in the world with my name so you won't get anyone else). 
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          
+            <hr>
+            <!--two rows for each URI-->
+            <div class="row row-cols-2"> 
+              <div class="col-6"> 
+                <div class="d-flex">
+                  <div class="p-2 flex-grow-1"><h4 id="JDillaPhotographs">J Dilla Photographs</h4></div>
+                  <div class="p-2">[<a href="data/JDillaPhotographs.ttl">ttl</a> | <a href="data/JDillaPhotographs.jsonld">json-ld</a>]</div>
+                </div>
+                <script src="https://gist.github.com/laurentfintoni/b60b9b7405a7cb89e99df803090ec441.js"></script> 
+              </div>
+              <div class="col-6"> 
+                <div class="d-flex">
+                  <div class="p-2 flex-grow-1"><h4 id="BrianCross">Brian Cross</h4></div>
+                  <div class="p-2">[<a href="data/BrianCross.ttl">ttl</a> | <a href="data/BrianCross.jsonld">json-ld</a>]</div>
+                </div>
+                <script src="https://gist.github.com/laurentfintoni/df37579f1726f63b1c7965f5478563e0.js"></script>
+              </div>
+            </div>
+            <!--two rows for each URI-->
+            <div class="row row-cols-2"> 
+              <div class="col-6"> 
+                <div class="d-flex">
+                  <div class="p-2 flex-grow-1"><h4 id="Detroit">Detroit</h4></div>
+                  <div class="p-2">[<a href="data/Detroit.ttl">ttl</a> | <a href="data/Detroit.jsonld">json-ld</a>]</div>
+                </div>
+                <script src="https://gist.github.com/laurentfintoni/a722068d4c26c2d9dd37b7a08192e466.js"></script>
+              </div>
+              <div class="col-6"> 
+                <div class="d-flex">
+                  <div class="p-2 flex-grow-1"><h4 id="JamesDewittYancey">James Dewitt Yancey</h4></div>
+                  <div class="p-2">[<a href="data/JamesDewittYancey.ttl">ttl</a> | <a href="data/JamesDewittYancey.jsonld">json-ld</a>]</div>
+                </div>
+                <script src="https://gist.github.com/laurentfintoni/ba9a8854588a2427b82f07bc9dbf1389.js"></script>
+              </div>
+            </div>
+            <!--a row for the last URI-->
+            <div class="row">  
+              <div class="d-flex">
+                <div class="p-2 flex-grow-1"><h4 id="StonesThrow">Stones Throw Records</h4></div>
+                <div class="p-2">[<a href="data/StonesThrow.ttl">ttl</a> | <a href="data/StonesThrow.jsonld">json-ld</a>]</div>
+              </div>
+              <script src="https://gist.github.com/laurentfintoni/6a5d94d85ab2616eee8dd37772914332.js"></script>
+            </div>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+      <footer class="mt-auto text-50 text-center">
+        <p class="small">A project by <a href="https://twitter.com/laurent_fintoni" class="text-blue" target="_blank">@laurent_fintoni</a> for the Knowledge Organisation and Cultural Heritage course, University of Bologna 2021</p>
+      </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    
+    
+  </body>
+  </html>
+  

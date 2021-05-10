@@ -1,0 +1,34 @@
+@base <https://laurentfintoni.github.io/jayinlodee/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm#>.
+@prefix owl: <https://www.w3.org/TR/owl2-syntax#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix dbo: <https://dbpedia.org/ontology/>.
+@prefix skos: <https://www.w3.org/2009/08/skos-reference/skos.html>.
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo>.
+@prefix wd: <http://www.wikidata.org/entity/>.
+@prefix mo: <http://purl.org/ontology/mo/>.
+@prefix rdfs: <https://www.w3.org/TR/rdf-schema#>.
+
+<RDF.html#StonesThrow>
+	rdf:type frbroo:F11_Corporate_Body;
+	dbo:foundingYear "1996"^^xsd:gYear;
+	dbo:foundedBy "Peanut Butter Wolf";
+	rdfs:seeAlso <https://www.stonesthrow.com/about/>; #history
+	owl:sameAs <http://viaf.org/viaf/107146937852013832489>;
+	crm:P52_has_current_owner <http://viaf.org/viaf/11699888>; #ChrisManak
+	dcterms:spatial <http://viaf.org/viaf/124053622>; #LosAngeles
+	crm:P2_has_type "record label";
+	skos:exactMatch wd:Q18127; #recordlabel;
+	mo:discogs <https://www.discogs.com/label/1217-Stones-Throw-Records>;
+	mo:published <items_data.html#DonutsAlbum>;
+	dcterms:creator <items_data.html#OurVinylWeighsATon>;
+	foaf:isPrimaryTopicOf <items_data.html#OurVinylWeighsATon>;
+	crm:P14_performed <RDF.html#JDillaPhotographs>;
+	crm:P67_is_referred_to_by <items_data.html#JDillaDiscography>;
+	crm:P67_is_referred_to_by <items_data.html#SuiteForMaDukes>;
+	crm:P67_is_referred_to_by <items_data.html#DonutsBook>;	
+	foaf:knows <http://viaf.org/viaf/38150030724010962919>; #MaureenYancey
+	foaf:knows <RDF.html#BrianCross>.

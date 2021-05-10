@@ -1,0 +1,27 @@
+@base <https://laurentfintoni.github.io/jayinlodee/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm#>.
+@prefix owl: <https://www.w3.org/TR/owl2-syntax#>.
+@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix gn: <https://www.geonames.org/ontology>.
+@prefix rdfs: <https://www.w3.org/TR/rdf-schema#>.
+
+<RDF.html#Detroit>
+	rdf:type crm:E53_Place;
+	gn:population "677116";
+	gn:countryCode "US";
+	gn:locationMap <https://www.geonames.org/4990729/detroit.html>;
+	gn:name "Detroit";
+	owl:sameAs <http://viaf.org/viaf/133676653>;
+	rdfs:seeAlso <https://en.wikipedia.org/wiki/Detroit>;
+	crm:P53_is_former_location_of <RDF.html#JamesDewittYancey>;
+	crm:P53_is_former_location_of <items_data.html#JDillaMPC>;
+	crm:P53_is_current_location_of <http://viaf.org/viaf/38150030724010962919>; #Maureen Yancey
+	crm:P53_is_current_location_of <items_data.html#StudioA>;
+	crm:P7_witnessed <RDF.html#JDillaPhotographs>;
+	crm:P7_witnessed <items_data.html#Welcome2Detroit>;
+	crm:P67_is_referred_to_by <items_data.html#Welcome2Detroit>;
+	crm:P67_is_referred_to_by <items_data.html#SuiteForMaDukes>;
+	crm:P67_is_referred_to_by <items_data.html#Discographies>;
+	crm:P67_is_referred_to_by <items_data.html#DonutsBook>;
+	crm:P67_is_referred_to_by <items_data.html#MaureenYanceyOralHistoryInterview>;
+	crm:P67_is_referred_to_by <items_data.html#OurVinylWeighsATon>.

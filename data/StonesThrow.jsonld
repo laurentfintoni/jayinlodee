@@ -1,0 +1,61 @@
+{
+  "@id": "https://laurentfintoni.github.io/jayinlodee/RDF.html#StonesThrow",
+  "http://purl.org/dc/terms/creator": {
+    "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#OurVinylWeighsATon"
+  },
+  "http://purl.org/dc/terms/spatial": {
+    "@id": "http://viaf.org/viaf/124053622"
+  },
+  "http://purl.org/ontology/mo/discogs": {
+    "@id": "https://www.discogs.com/label/1217-Stones-Throw-Records"
+  },
+  "http://purl.org/ontology/mo/published": {
+    "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#DonutsAlbum"
+  },
+  "http://www.cidoc-crm.org/cidoc-crm#P14_performed": {
+    "@id": "https://laurentfintoni.github.io/jayinlodee/RDF.html#JDillaPhotographs"
+  },
+  "http://www.cidoc-crm.org/cidoc-crm#P2_has_type": "record label",
+  "http://www.cidoc-crm.org/cidoc-crm#P52_has_current_owner": {
+    "@id": "http://viaf.org/viaf/11699888"
+  },
+  "http://www.cidoc-crm.org/cidoc-crm#P67_is_referred_to_by": [
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#JDillaDiscography"
+    },
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#SuiteForMaDukes"
+    },
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#DonutsBook"
+    }
+  ],
+  "http://xmlns.com/foaf/0.1/isPrimaryTopicOf": {
+    "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#OurVinylWeighsATon"
+  },
+  "http://xmlns.com/foaf/0.1/knows": [
+    {
+      "@id": "http://viaf.org/viaf/38150030724010962919"
+    },
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/RDF.html#BrianCross"
+    }
+  ],
+  "https://dbpedia.org/ontology/foundedBy": "Peanut Butter Wolf",
+  "https://dbpedia.org/ontology/foundingYear": {
+    "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+    "@value": "1996"
+  },
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+    "@id": "http://iflastandards.info/ns/fr/frbr/frbrooF11_Corporate_Body"
+  },
+  "https://www.w3.org/2009/08/skos-reference/skos.htmlexactMatch": {
+    "@id": "http://www.wikidata.org/entity/Q18127"
+  },
+  "https://www.w3.org/TR/owl2-syntax#sameAs": {
+    "@id": "http://viaf.org/viaf/107146937852013832489"
+  },
+  "https://www.w3.org/TR/rdf-schema#seeAlso": {
+    "@id": "https://www.stonesthrow.com/about/"
+  }
+}

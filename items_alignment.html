@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Documenting the process of analysing and aligning the metadata of ten cultural heritage items relating to J Dilla.">
+  <meta name="author" content="Laurent Fintoni">
+  <title>Metadata Alignment - Jay in LODee</title>
+  
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  
+  <!-- Custom styles for this template -->
+  <link href="css/jaydeelod.css" rel="stylesheet">
+
+  <!-- Animation CSS-->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body class="d-flex h-100 text-black bg-light bg-gradient">
+  <div class="d-flex w-100 h-100 p-3 flex-column">
+    <header class="mb-auto">
+      <nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="navbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#jaynavbar" aria-controls="jaynavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-md-center" id="jaynavbar">
+            <a class="navbar-brand" href="index.html">Jay In LODee</a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="domain.html">Domain</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page" href="#">Items</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                  <li><a class="dropdown-item" href="items.html">Selection</a></li>
+                  <li><a class="dropdown-item" href="items_alignment.html">Alignment</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="models.html" tabindex="-1">Models</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown2" data-bs-toggle="dropdown" aria-expanded="false">Data</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                  <li><a class="dropdown-item" href="items_data.html">Items</a></li>
+                  <li><a class="dropdown-item" href="RDF.html">RDF</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="container mx-auto py-md-3">
+        <div class="shadow-lg p-4 mb-2 bg-body rounded">
+          <h4 class="animate__animated animate__slideInLeft d-flex justify-content-center pb-3">Metadata analysis of the items</h4>
+          <p>Having chosen the items and done a first round of domain modelling (see <a href="models.html" target="_blank">modelling page</a> for more details), I then set about analysing which metadata standards were used for each. This is shown in the table below. To help me think about the following steps I created categories to which each item could belong: artifacts (MPC), texts (book, web pages), multimedia (DVD, photographs, interview, albums), and physical (event, studio).</p>
+          <p>Here the main points that emerged from this analysis:</p>
+          <ul>
+            <li>The most prominent standard is the Library of Congress' MARC21, due to the fact that half of the items are held in American libraries (with one documented by WorldCat which itself links to libraries)</li>
+            <li>The Smithsonian uses a proprietary system called EDAN, which incorporates established standards like Dublin Core, MARC, and METS, but which is not publicly documented nor easily open to integration in Linked Open Data. Some Smithsonian institutions, like SAAM, <a href="https://americanart.si.edu/about/lod" target="_blank">are publishing their online collection in LOD</a> but this isn't yet the case for the one in which the items I chose are held</li>
+            <li>Discogs uses Open Graph as its standard however for non-releaes, like Studio A, this is implemented in a rather limited fashion with the only metadata on the page being a type, id, image, and description (as well as marketplace-related data)</li>
+          </ul>          
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Category</th>
+                <th scope="col">Owner</th>
+                <th scope="col">Provider</th>
+                <th scope="col">Standard</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-info">
+                <td>MPC 3000 Limited Edition</td>
+                <td>Artifacts</td>
+                <td>Smithsonian National Museum of African American History and Culture</td>
+                <td>Smithsonian National Museum of African American History and Culture</td>
+                <td><a href="https://collections.si.edu/search/about.htm" target="_blank">EDAN</a></td>
+              </tr>
+              <tr class="table-warning">
+                <td>Donuts</td>
+                <td>Texts</td>
+                <td>Library of Congress</td>
+                <td>Library of Congress</td>
+                <td><a href="https://www.loc.gov/marc/bibliographic/" target="_blank">MARC21</a> / <a href="https://www.loc.gov/standards/mods/userguide/generalapp.html" target="_blank">MODS</a></td>
+              </tr>
+              <tr class="table-danger">
+                <td>Donuts</td>
+                <td>Multimedia</td>
+                <td>St. Paul Public Library</td>
+                <td>St. Paul Public Library</td>
+                <td><a href="https://www.loc.gov/marc/bibliographic/" target="_blank">MARC21</a></td>
+              </tr>
+              <tr class="table-info">
+                <td>Welcome 2 Detroit</td>
+                <td>Multimedia</td>
+                <td>Library of Congress</td>
+                <td>Library of Congress</td>
+                <td><a href="https://www.loc.gov/marc/bibliographic/" target="_blank">MARC21</a> / <a href="https://www.loc.gov/standards/mods/userguide/generalapp.html" target="_blank">MODS</a></td>
+              </tr>
+              <tr class="table-warning">
+                <td>Maureen Yancey Oral History Interview</td>
+                <td>Multimedia</td>
+                <td>Smithsonian National Museum of African American History and Culture</td>
+                <td>Smithsonian National Museum of African American History and Culture</td>
+                <td><a href="https://collections.si.edu/search/about.htm" target="_blank">EDAN</a></td>
+              </tr>
+              <tr class="table-danger">
+                <td>Our Vinyl Weighs A Ton</td>
+                <td>Multimedia</td>
+                <td>n/a</td>
+                <td>WorldCat</td>
+                <td><a href="https://www.loc.gov/marc/bibliographic/" target="_blank">MARC21</a></td>
+              </tr>
+              <tr class="table-info">
+                <td>Discographies</td>
+                <td>Texts</td>
+                <td>n/a</td>
+                <td>MusicBrainz</td>
+                <td><a href="https://musicbrainz.org/doc/MusicBrainz_Database/Schema" target="_blank">MMD</a></td>
+              </tr>
+              <tr class="table-warning">
+                <td>Photographs</td>
+                <td>Multimedia</td>
+                <td>Brian Cross</td>
+                <td>n/a</td>
+                <td>n/a</td>
+              </tr>
+              <tr class="table-danger">
+                <td>Suite For Ma Dukes</td>
+                <td>Physical</td>
+                <td>San Francisco Public Library (DVD recording)</td>
+                <td>San Francisco Public Library (DVD recording)</td>
+                <td><a href="https://www.loc.gov/marc/bibliographic/" target="_blank">MARC21</a></td>
+              </tr>
+              <tr class="table-info">
+                <td>Studio A</td>
+                <td>Physical</td>
+                <td>n/a</td>
+                <td>Discogs</td>
+                <td><a href="https://ogp.me/" target="_blank">Open Graph</a></td>
+              </tr>
+            </tbody>
+          </table>
+        <hr>
+        <h4 class="d-flex justify-content-center pb-3">Metadata Alignment</h4>
+        <p>Following the analysis is the metadata alignment, mapping elements and properties from different standards that are useful to describe the items. As Jenn Riley put it in <em>Seeing Standards: A Visualization of the Metadata Universe</em>, "The sheer number of metadata standards in the cultural heritage sector is overwhelming," [<a href="#footnote1">1</a>] which makes the need for alignment all the more important but also difficult.</p> 
+        <p>Being entirely new to the world of metadata standards, the alignment step proved the most challenging but it was also an ideal way in which to get more familiar with the inter-operability and parallels between bibliographic standards like MARC21, generic ones like Dublin Core, and more specific ones like CIDOC-CRM and FRBROO. I definitely learnt a lot about how to navigate documentation and how challenging it can be to try and describe items accurately in just one language as well as how types of items differ in how they can be described by specific languages. And to once again return to the underlying motivations behind this project, it also became apparent that certain types of work like a discography can be quite difficult to fully capture without turning into a large project in and of itself, for example building a specific ontology that can deal with the intricacies of the artist's work like in this case Yancey's use of sampling (and the ongoing usage of his material as samples by new generations of artists).</p> 
+        <p>In the end I chose to focus the alignment on four of the standards from the analysis - EDAN, MARC21, MODS, MMD - and another four to help me better capture the items chose - Dublin Core, IPTC, CIDOC-CRM, and FRBROO.</p>
+        <p>A few things to note on that last point:</p>
+        <ul>
+          <li>I kept EDAN in despite it not being publicly documented because I wanted to try and see how much of it I could figure out by just navigating the records of the items I chose as well as records similar to the other items</li>
+          <li>I kept MMD even though it's not very flexible or useful outside of documenting music releases, and as we'll see in the rest of the project in the end I used more flexible music-minded vocabularies like Music Ontology to fully capture the various musical aspects of and relationships between the chosen items and related entities</li>
+          <li>I chose Dublin Core as a way to have a most generic description of every property in case it was needed in the modelling</li>
+          <li>IPTC was chosen as the standard with which to describe the photographs, the non-catalogued item. I spent a bit of time looking into standards for images (using Riley's map) but nothing felt quite appropriate in capturing what this particular visual item is about. In the end I think IPTC worked (as you can see in the <a href="RDF.html" target="_blank"> RDF section</a> where the item is fully described) even if it is more of a professional standard rather than something for the cultural heritage domain</li>
+          <li>CIDOC-CRM and FRBROO were chosen for their flexibility, interoperability and dedication to cultural heritage documentation, exchange, and interpretation of the past, allowing me to think about the items in terms of relationships between creative work, expression, and manifestation</li>
+        </ul>
+        <p>I worked through the modelling and metadata phases of the project in parallel, often going back and forth between them, adding, removing, and refining properties, relationships, and entities. It was through this process that I came to somewhat change the perspective and approach to two of the items, as mentioned in the Selection page. The discographies used MMD, which applies to music, but I wanted them to be a combination of text with information about music as well as a concept of a body of work for which CIDOC-CRM and FRBROO were best. The event was first described using the MARC21 record from the SF Library and then this was abandoned in favor of describing it purely as an event, using a combination of standards. These changes are most apparent in the next step, modelling.             
+        </p>
+        <p>The full alignment can be seen in the spreadsheet below or <a href="https://docs.google.com/spreadsheets/d/1Kjm0eUdMPEYn2KM4IdncKpSpOtnlDGN8tKSimauDIHg/edit?usp=sharing" target="_blank">accessed directly here</a>.</p>
+        
+        <iframe class="w-100" height="500" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQaU_vk7Xe_3v0cOon71oGFAKqslRo1d_1C6HJVPsib8UN9WNAuK0q_YBmZIUyUb_WihjU1n_5FBoaj/pubhtml?widget=true&amp;headers=false" allowfullscreen></iframe>
+
+        <hr>
+        <div id="footnote1">
+        <p class="small">[1] - Jenn Riley, <em>Seeing Standards: A Visualization of the Metadata Universe</em> - <a href="http://jennriley.com/metadatamap/seeingstandards.pdf" target="_blank">http://jennriley.com/metadatamap/seeingstandards.pdf</a></p></div>
+        </div>
+      </div>
+      
+    </main>
+    
+    <footer class="mt-auto text-50 text-center">
+      <p class="small">A project by <a href="https://twitter.com/laurent_fintoni" class="text-blue" target="_blank">@laurent_fintoni</a> for the Knowledge Organisation and Cultural Heritage course, University of Bologna 2021</p>
+    </footer>
+  </div>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  
+  
+</body>
+</html>

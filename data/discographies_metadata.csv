@@ -1,0 +1,31 @@
+﻿Subject,Predicate,Object
+J Dilla discography,frbroo:R16_was_initiated_by,James Dewitt Yancey's production work as J Dilla
+Jay Dee discography,frbroo:R16_was_initiated_by,James Dewitt Yancey's production work as Jay Dee
+J Dilla discography,crm:P4_has_time-span,2001-present
+Jay Dee discography,crm:P4_has_time-span,1995-2007
+J Dilla discography,dc:creator,James Dewitt Yancey
+Jay Dee discography,dc:creator,James Dewitt Yancey
+J Dilla discography,frbroo:R64_used_name,J Dilla
+Jay Dee discography,frbroo:R64_used_name,Jay Dee
+J Dilla discography,frbroo:R10_has_member,Donuts
+Jay Dee discography,frbroo:R10_has_member,Welcome 2 Detroit
+J Dilla discography,crm:P102_has_title,J Dilla discography
+Jay Dee discography,crm:P102_has_title,Jay Dee discography
+J Dilla discography,mo:discography,https://musicbrainz.org/artist/cbcbb22c-3a8d-46af-b4ba-09c98f0d7931
+Jay Dee discography,mo:discography,https://musicbrainz.org/artist/439591a7-045d-4f90-86e0-40100506bafd
+J Dilla discography,rdf:type,web page
+Jay Dee discography,rdf:type,web page
+J Dilla discography,mmd:begin-area,Detroit
+Jay Dee discography,mmd:begin-area,Detroit
+J Dilla discography,mmd:end-area,Los Angeles
+Jay Dee discography,mmd:end-area,Los Angeles
+J Dilla discography,mo:genre,"hip-hop, experimental, soul, instrumental"
+Jay Dee discography,mo:genre,hip-hop
+J Dilla discography,mmd:artist_id,cbcbb22c-3a8d-46af-b4ba-09c98f0d7931
+Jay Dee discography,mmd:artist_id,439591a7-045d-4f90-86e0-40100506bafd
+J Dilla discography,crm:P67_refers_to,Jaylib
+Jay Dee discography,crm:P67_refers_to,"Slum Village, 1st Down, J-88, The Soulquarians, The Ummah"
+J Dilla discography,mo:discogs,https://www.discogs.com/artist/324866-J-Dilla
+Jay Dee discography,mo:discogs,https://www.discogs.com/artist/33373-Jay-Dee
+J Dilla discography,owl:sameAs,https://musicbrainz.org/artist/cbcbb22c-3a8d-46af-b4ba-09c98f0d7931
+Jay Dee discography,owl:sameAs,https://musicbrainz.org/artist/439591a7-045d-4f90-86e0-40100506bafd

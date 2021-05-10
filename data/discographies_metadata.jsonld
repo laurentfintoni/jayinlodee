@@ -1,0 +1,58 @@
+{
+  "@context": "http://schema.org/",
+  "id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#Discographies",
+  "http://iflastandards.info/ns/fr/frbr/frbrooR10_has_member": [
+    "Donuts (album(",
+    "Welcome 2 Detroit"
+  ],
+  "http://iflastandards.info/ns/fr/frbr/frbrooR16_was_initiated_by": [
+    "James Dewitt Yancey's production work as J Dilla",
+    "James Dewitt Yancey's production work as Jay Dee"
+  ],
+  "http://iflastandards.info/ns/fr/frbr/frbrooR64_used_name": [
+    "J Dilla",
+    "Jay Dee"
+  ],
+  "http://musicbrainz.org/ns/mmd-1.0#artist_id": [
+    "cbcbb22c-3a8d-46af-b4ba-09c98f0d7931",
+    "439591a7-045d-4f90-86e0-40100506bafd"
+  ],
+  "http://musicbrainz.org/ns/mmd-1.0#begin-area": "Detroit",
+  "http://musicbrainz.org/ns/mmd-1.0#end-area": "Los Angeles",
+  "dct:creator": "James Dewitt Yancey",
+  "http://purl.org/ontology/mo/discography": [
+    {
+      "id": "https://musicbrainz.org/artist/cbcbb22c-3a8d-46af-b4ba-09c98f0d7931"
+    },
+    {
+      "id": "https://musicbrainz.org/artist/439591a7-045d-4f90-86e0-40100506bafd"
+    }
+  ],
+  "http://purl.org/ontology/mo/discogs": [
+    {
+      "id": "https://www.discogs.com/artist/324866-J-Dilla"
+    },
+    {
+      "id": "https://www.discogs.com/artist/33373-Jay-Dee"
+    }
+  ],
+  "http://purl.org/ontology/mo/genre": "hip-hop, experimental, soul, instrumental",
+  "http://www.cidoc-crm.org/cidoc-crm#P102_has_title": [
+    "J Dilla discography",
+    "Jay Dee discography"
+  ],
+  "http://www.cidoc-crm.org/cidoc-crm#P4_has_time-span": [
+    "2001-present",
+    "1995-2007"
+  ],
+  "http://www.cidoc-crm.org/cidoc-crm#P67_refers_to": "Jaylib, Slum Village, 1st Down, J-88, The Soulquarians, The Ummah",
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type": "web page",
+  "https://www.w3.org/TR/owl2-syntax#sameAs": [
+    {
+      "id": "https://musicbrainz.org/artist/cbcbb22c-3a8d-46af-b4ba-09c98f0d7931"
+    },
+    {
+      "id": "https://musicbrainz.org/artist/439591a7-045d-4f90-86e0-40100506bafd"
+    }
+  ]
+}

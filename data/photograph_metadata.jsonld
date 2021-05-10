@@ -1,0 +1,19 @@
+{
+  "@context": "http://schema.org/",
+  "id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#JDillaPhotograph",
+  "http://ns.adobe.com/photoshop/1.0/AuthorsPosition": "photographer",
+  "http://ns.adobe.com/photoshop/1.0/Credit": "Brian &ldquo;B+&ldquo; Cross",
+  "http://ns.adobe.com/photoshop/1.0/DateCreated": "2003",
+  "http://ns.adobe.com/photoshop/1.0/Source": "Brian Cross, Stones Throw",
+  "dct:creator": "Brian Cross",
+  "dct:isPartOf": "Contact High: A Visual History of Hip-Hop",
+  "dct:title": "J Dilla, Detroit, 2003",
+  "http://www.cidoc-crm.org/cidoc-crm#P2_has_type": "negative film",
+  "http://www.cidoc-crm.org/cidoc-crm#P49_has_former_keeper": "Annenberg Space For Photography",
+  "http://xmlns.com/foaf/0.1/primaryTopic": "J Dilla",
+  "https://www.iptc.org/std/Iptc4xmpCore/1.0/xmlns/Event": "Photoshoot for Stones Throw album",
+  "https://www.iptc.org/std/Iptc4xmpCore/1.0/xmlns/IntellectualGenre": "Portrait",
+  "https://www.iptc.org/std/Iptc4xmpCore/1.0/xmlns/LocationCreated": "Detroit",
+  "https://www.iptc.org/std/Iptc4xmpCore/1.0/xmlns/LocationShown": "Home studio",
+  "https://www.iptc.org/std/Iptc4xmpCore/1.0/xmlns/PersonInImage": "James Dewitt Yancey"
+}

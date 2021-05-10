@@ -1,0 +1,1090 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simple RDF data tables of ten cultural heritage items relating to J Dilla, as well as links to other Linked Open Data versions.">
+  <meta name="author" content="Laurent Fintoni">
+  <title>Cultural Heritage Items Data - Jay in LODee</title>
+  
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  
+  <!-- Custom styles for this template -->
+  <link href="css/jaydeelod.css" rel="stylesheet">
+
+  <!-- Animation CSS-->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body class="d-flex h-100 text-black bg-light bg-gradient">
+  <div class="d-flex w-100 h-100 p-3 flex-column">
+    <header class="mb-auto">
+      <nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="navbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#jaynavbar" aria-controls="jaynavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-md-center" id="jaynavbar">
+            <a class="navbar-brand" href="index.html">Jay In LODee</a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="domain.html">Domain</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false" href="#">Items</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                  <li><a class="dropdown-item" href="items.html">Selection</a></li>
+                  <li><a class="dropdown-item" href="items_alignment.html">Alignment</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="models.html" tabindex="-1">Models</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="dropdown2" data-bs-toggle="dropdown" aria-current="page"  aria-expanded="false">Data</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                  <li><a class="dropdown-item" href="items_data.html">Items</a></li>
+                  <li><a class="dropdown-item" href="RDF.html">RDF</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="container mx-auto py-md-3">
+        <div class="shadow-lg p-4 mb-2 bg-body rounded">
+          <h4 class="animate__animated animate__slideInLeft d-flex justify-content-center pb-3">RDF data related to the items</h4>
+          <p>A note on the process: we were only asked to create a csv file for each item but after researching some processes for transforming and visualising RDF data I decided to go a little further to explore interoperability and accessibility.</p>
+          <p>I began with manually creating the csv files, then I turned them into html tables (below) using a <a href="https://www.convertcsv.com/csv-to-html.htm" target="_blank">csv to html converter</a>. At this point I had already started creating the final RDF file the project asked for, and so I also turned the items data into their own RDF files, using Turtle syntax, which I then fed into a <a href="https://www.easyrdf.org/converter" target="_blank">converter</a> to generate JSON-LD versions. These were in turn fed into the <a href="https://json-ld.org/playground/" target="_blank">JSON-LD playground</a> to create compact versions. All three versions (validated for any errors) of each item are available directly from this page and the GitHub repository of the project. I had to stop there due to time constraints but I would like to further explore how to use these different formats to make the data available, as well as to play with it visually and plug it into the wider semantic web.</p>
+          <p>As per the requirements, each item is described using natural language for subject and object and the specific predicate from the chosen vocabularies. Each item table is also a URI for itself formatted as <code>domain/items_data.html#NAME</code> with the name located in the id attribute of the HTML title tag. As such accessing <a href="https://laurentfintoni.github.io/jaydeeinlod/items_data.html#Welcome2Detroit" target="_blank">https://laurentfintoni.github.io/jaydeeinlod/items_data.html#Welcome2Detroit</a> directly will lead you to the relevant location on this page.</p>
+          <div class="row row-cols-2"> 
+            <!--two columns for metadata tables-->
+            <div class="col-6">  
+              <div class="d-flex">
+                <div class="p-2 flex-grow-1"><h4 id="MaureenYanceyOralHistoryInterview">Maureen Yancey Oral History Interview </h4></div>
+                <div class="p-2">[<a href="data/oralhistory_metadata.csv">csv</a> | <a href="data/oralhistory_metadata.ttl">ttl</a> | <a href="data/oralhistory_metadata.jsonld">json-ld</a>]</div>
+              </div>
+              <table class="table mb-0 table-striped table-bordered"><thead><tr><th scope="col">Subject</th><th scope="col">Predicate</th><th scope="col">Object</th></tr></thead><tbody>
+                <tr>
+                  <td>Maureen Yancey Oral History Interview</td>
+                  <td>foaf:primaryTopic</td>
+                  <td>James Dewitt Yancey </td>
+                </tr>
+                <tr>
+                  <td>Maureen Yancey Oral History Interview</td>
+                  <td>frbroo:R13_realises</td>
+                  <td>The recording of the interview </td>
+                </tr>
+                <tr>
+                  <td>Maureen Yancey Oral History Interview</td>
+                  <td>crm:P7_took_place_at</td>
+                  <td>Washington D.C.</td>
+                </tr>
+                <tr>
+                  <td>Maureen Yancey Oral History Interview</td>
+                  <td>dcterms:date</td>
+                  <td>2016</td>
+                </tr>
+                <tr>
+                  <td>Maureen Yancey Oral History Interview</td>
+                  <td>crm:P2_has_type</td>
+                  <td>video recordings, oral histories, digital media - born digital</td>
+                </tr>
+                <tr>
+                  <td>Maureen Yancey Oral History Interview</td>
+                  <td>dcterms:creator</td>
+                  <td>National Museum of African American History and Culture</td>
+                </tr>
+                <tr>
+                  <td>Maureen Yancey Oral History Interview</td>
+                  <td>crm:P50_has_current_keeper</td>
+                  <td>National Museum of African American History and Culture</td>
+                </tr>
+                <tr>
+                  <td>Maureen Yancey Oral History Interview</td>
+                  <td>crm:P102_has_title</td>
+                  <td>Maureen Yancey Oral History Interview</td>
+                </tr>
+                <tr>
+                  <td>Maureen Yancey Oral History Interview</td>
+                  <td>crm:P129_is_about</td>
+                  <td>hip hop (music), museums</td>
+                </tr>
+                <tr>
+                  <td>Maureen Yancey Oral History Interview</td>
+                  <td>crm:P70_documents</td>
+                  <td>Maureen Yancey</td>
+                </tr>
+                <tr>
+                  <td>Maureen Yancey Oral History Interview</td>
+                  <td>crm:P67_refers_to</td>
+                  <td>J Dilla</td>
+                </tr>
+                <tr>
+                  <td>Maureen Yancey Oral History Interview</td>
+                  <td>dc:isPartOf</td>
+                  <td>The Collection Donor Oral History Project</td>
+                </tr>
+                <tr>
+                  <td>Maureen Yancey Oral History Interview</td>
+                  <td>dc:SizeOrDuration</td>
+                  <td>60.4 minutes, 59.8 minutes</td>
+                </tr>
+                <tr>
+                  <td>Maureen Yancey Oral History Interview</td>
+                  <td>dc:identifier</td>
+                  <td>2016.129.14.1a-.2a</td>
+                </tr>
+                <tr>
+                  <td>Maureen Yancey Oral History Interview</td>
+                  <td>owl:sameAs</td>
+                  <td><a target="_blank" href="http://n2t.net/ark:/65665/fd5e6894f8e-d477-4660-82b3-a7f9cd68b845">EDAN-URL</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-6">   
+            <div class="d-flex ">
+              <div class="p-2 flex-grow-1 "><h4 id="JdillaMPC">MPC3000 Limited Edition</h4></div>
+              <div class="p-2 ">[<a href="data/MPC3000_metadata.csv">csv</a> | <a href="data/MPC3000_metadata.ttl">ttl</a> | <a href="data/MPC3000_metadata.jsonld">json-ld</a>]</div>
+            </div>
+            <table class="table mb-0 table-striped table-bordered"><thead><tr><th scope="col">Subject</th><th scope="col">Predicate</th><th scope="col">Object</th></tr></thead><tbody>
+              <tr>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+                <td>dc:creator</td>
+                <td>Roger Linn</td>
+              </tr>
+              <tr>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+                <td>frbroo:28_was_produced_by</td>
+                <td>AKAI Professional</td>
+              </tr>
+              <tr>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+                <td>crm:P101_had_as_general_use</td>
+                <td>electronic instrument</td>
+              </tr>
+              <tr>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+                <td>crm:P45_consists_of</td>
+                <td>plastic, rubber, metal</td>
+              </tr>
+              <tr>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+                <td>dc:date</td>
+                <td>2000</td>
+              </tr>
+              <tr>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+                <td>crm:P51_has_former_owner</td>
+                <td>James Dewitt Yancey</td>
+              </tr>
+              <tr>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+                <td>crm:P50_has_current_keeper</td>
+                <td>National Museum of African American History and Culture</td>
+              </tr>
+              <tr>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+                <td>crm:P102_has_title</td>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+              </tr>
+              <tr>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+                <td>crm:P53_has_former_location</td>
+                <td>Detroit</td>
+              </tr>
+              <tr>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+                <td>crm:P53_has_former_location</td>
+                <td>Los Angeles</td>
+              </tr>
+              <tr>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+                <td>rdf:type</td>
+                <td>electronic instrument</td>
+              </tr>
+              <tr>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+                <td>crm:P43_has_dimension</td>
+                <td>4 7/8 × 17 3/8 × 15 3/4 in. </td>
+              </tr>
+              <tr>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+                <td>crm:P129_is_about</td>
+                <td>African American, Hip Hop (music), Musicians</td>
+              </tr>
+              <tr>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+                <td>dc:identifier</td>
+                <td>2014.139.1</td>
+              </tr>
+              <tr>
+                <td>MIDI Production Center 3000 Limited Edition</td>
+                <td>owl:sameAs</td>
+                <td><a target="_blank" href="http://n2t.net/ark:/65665/fd5250299cc-baec-429a-8d79-390266066e6a">EDAN-URL</a></td>
+              </tr>
+            </tbody></table>
+          </div>
+          <!--two columns for metadata tables-->
+          <div class="col-6 pt-2">  
+            <div class="d-flex">
+              <div class="p-2 flex-grow-1 "><h4 id="JDillaPhotograph">J Dilla, Detroit, 2003 (photograph)</h4></div>
+              <div class="p-2 ">[<a href="data/photograph_metadata.csv">csv</a> | <a href="data/photograph_metadata.ttl">ttl</a> | <a href="data/photograph_metadata.jsonld">json-ld</a>]</div>
+            </div>
+            <table class="table mb-0 table-striped table-bordered"><thead><tr><th scope="col">Subject</th><th scope="col">Predicate</th><th scope="col">Object</th></tr></thead><tbody>
+              <tr>
+                <td>J Dilla, Detroit, 2003</td>
+                <td>Iptc4xmpExt:PersonInImage</td>
+                <td>James Dewitt Yancey</td>
+              </tr>
+              <tr>
+                <td>J Dilla, Detroit, 2003</td>
+                <td>Iptc4xmpExt:LocationCreated</td>
+                <td>Detroit</td>
+              </tr>
+              <tr>
+                <td>J Dilla, Detroit, 2003</td>
+                <td>dc:creator</td>
+                <td>Brian Cross</td>
+              </tr>
+              <tr>
+                <td>J Dilla, Detroit, 2003</td>
+                <td>crm:P2_has_type</td>
+                <td>negative film</td>
+              </tr>
+              <tr>
+                <td>J Dilla, Detroit, 2003</td>
+                <td>crm:P49_has_former_keeper</td>
+                <td>Annenberg Space For Photography</td>
+              </tr>
+              <tr>
+                <td>J Dilla, Detroit, 2003</td>
+                <td>dc:isPartOf</td>
+                <td>Contact High: A Visual History of Hip-Hop</td>
+              </tr>
+              <tr>
+                <td>J Dilla, Detroit, 2003</td>
+                <td>photoshop:DateCreated</td>
+                <td>2003</td>
+              </tr>
+              <tr>
+                <td>J Dilla, Detroit, 2003</td>
+                <td>foaf:primaryTopic</td>
+                <td>J Dilla</td>
+              </tr>
+              <tr>
+                <td>J Dilla, Detroit, 2003</td>
+                <td>dc:title</td>
+                <td>J Dilla, Detroit, 2003</td>
+              </tr>
+              <tr>
+                <td>J Dilla, Detroit, 2003</td>
+                <td>photoshop:AuthorsPosition</td>
+                <td>photographer</td>
+              </tr>
+              <tr>
+                <td>J Dilla, Detroit, 2003</td>
+                <td>photoshop:Credit</td>
+                <td>Brian &quot;B+&quot; Cross</td>
+              </tr>
+              <tr>
+                <td>J Dilla, Detroit, 2003</td>
+                <td>photoshop:Source</td>
+                <td>Brian Cross, Stones Throw</td>
+              </tr>
+              <tr>
+                <td>J Dilla, Detroit, 2003</td>
+                <td>Iptc4xmpExt:LocationShown</td>
+                <td>Home studio</td>
+              </tr>
+              <tr>
+                <td>J Dilla, Detroit, 2003</td>
+                <td>Iptc4xmpCore:IntellectualGenre</td>
+                <td>Portrait</td>
+              </tr>
+              <tr>
+                <td>J Dilla, Detroit, 2003</td>
+                <td>Iptc4xmpExt:Event</td>
+                <td>Photoshoot for Stones Throw album</td>
+              </tr>
+            </tbody></table>
+          </div>
+          <div class="col-6 pt-2">   
+            <div class="d-flex ">
+              <div class="p-2 flex-grow-1 "><h4 id="SuiteForMaDukes">Suite For Ma Dukes</h4></div>
+              <div class="p-2 ">[<a href="data/madukes_metadata.csv">csv</a> | <a href="data/madukes_metadata.ttl">ttl</a> | <a href="data/madukes_metadata.jsonld">json-ld</a>]</div>
+            </div>
+            <table class="table mb-0 table-striped table-bordered"><thead><tr><th scope="col">Subject</th><th scope="col">Predicate</th><th scope="col">Object</th></tr></thead><tbody>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>foaf:primaryTopic</td>
+                <td>James Dewitt Yancey</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>crm:P11_had_participant</td>
+                <td>Maureen Yancey</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>mo:producer</td>
+                <td>Mochilla</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>frbroo:R25_was_performed_in</td>
+                <td>set of instructions for the concert performance</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>dc:date</td>
+                <td>22-Feb-09</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>mo:conductor</td>
+                <td>Miguel Atwood-Ferguson</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>crm:P2_has_type</td>
+                <td>orchestral concert</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>crm:P102_has_title</td>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>crm:P7_took_place_at</td>
+                <td>Harriet and Charles Luckman Fine Arts Complex</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>dc:isPartOf</td>
+                <td>Timeless</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>mo:genre</td>
+                <td>hip-hop, jazz, classical</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>dc:language</td>
+                <td>English</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>crm:P67_refers_to</td>
+                <td>Donuts</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>mo:performer</td>
+                <td>Various performers</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>mo:composer</td>
+                <td>James Dewitt Yancey</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>mo:available_as</td>
+                <td>vinyl album</td>
+              </tr>
+              <tr>
+                <td>Suite For Ma Dukes: The Music of James “Dilla” Yancey</td>
+                <td>mo:discogs</td>
+                <td><a target="_blank" href="https://www.discogs.com/Miguel-Atwood-Ferguson-Mochilla-Presents-Timeless-Suite-For-Ma-Dukes-The-Music-Of-James-J-Dilla-Yanc/release/2554289">Discogs Record</a></td>
+              </tr>
+            </tbody></table>
+          </div>
+          <!--two columns for metadata tables-->
+          <div class="col-6 pt-2">  
+            <div class="d-flex">
+              <div class="p-2 flex-grow-1 "><h4 id="OurVinylWeighsATon">Our Vinyl Weighs A Ton</h4></div>
+              <div class="p-2 ">[<a href="data/ourvinyl_metadata.csv">csv</a> | <a href="data/ourvinyl_metadata.ttl">ttl</a> | <a href="data/ourvinyl_metadata.jsonld">json-ld</a>]</div>
+            </div>
+            <table class="table mb-0 table-striped table-bordered"><thead><tr><th scope="col">Subject</th><th scope="col">Predicate</th><th scope="col">Object</th></tr></thead><tbody>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>schema:publisher</td>
+                <td>Stones Throw </td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>frbroo:R28_was_produced_by</td>
+                <td>manufacturing of moving image recordings into DVDs</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>rdf:type</td>
+                <td>music documentary</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>crm:P138_represents</td>
+                <td>J Dilla and 30 others</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>crm:P129_is_about</td>
+                <td>Rap (music), Rock music</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>crm:P2_has_type</td>
+                <td>sound recording, visual material</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>crm:P102_has_title</td>
+                <td>Our Vinyl Weighs a Ton</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>schema:releaseDate</td>
+                <td>2014</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>dc:description</td>
+                <td>Music CD: CD Audio : DVD audio Visual material</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>crm:P67_refers_to</td>
+                <td>James Dewitt Yancey</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>crm:P67_refers_to</td>
+                <td>Los Angeles</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>crm:P67_refers_to</td>
+                <td>Studio A Recording Inc. </td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>crm:P67_refers_to</td>
+                <td>Donuts (album)</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>crm:P67_refers_to</td>
+                <td>Detroit</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>dc:language</td>
+                <td>English</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>dc:identifier</td>
+                <td>884522208</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>owl:sameAs</td>
+                <td><a href="https://www.worldcat.org/title/our-vinyl-weighs-a-ton/oclc/884522208" target="_blank">WorldCat Record</a></td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>mo:performer</td>
+                <td>Various performers</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>schema:director</td>
+                <td>Jeff Broadway</td>
+              </tr>
+              <tr>
+                <td>Our Vinyl Weighs a Ton</td>
+                <td>mo:discogs</td>
+                <td><a target="_blank" href="https://www.discogs.com/Various-Our-Vinyl-Weighs-A-Ton-This-Is-Stones-Throw-Records/master/694183">Discogs Record</a></td>
+              </tr>
+              </tbody></table>
+          </div>
+          <div class="col-6 pt-2">   
+            <div class="d-flex ">
+              <div class="p-2 flex-grow-1 "><h4 id="DonutsBook">Donuts (Book)</h4></div>
+              <div class="p-2 ">[<a href="data/donuts_book_metadata.csv">csv</a> | <a href="data/donuts_book_metadata.ttl">ttl</a> | <a href="data/madukes_metadata.jsonld">json-ld</a>]</div>
+            </div>
+            <table class="table mb-0 table-striped table-bordered"><thead><tr><th scope="col">Subject</th><th scope="col">Predicate</th><th scope="col">Object</th></tr></thead><tbody>
+              <tr>
+                <td>Donuts</td>
+                <td>dc:publisher</td>
+                <td>Bloomsbury </td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>crm:P50_has_current_keeper</td>
+                <td>Library of Congress</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>frbroo:R28_was_produced_by</td>
+                <td>production of copies of original manuscript</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>crm:P102_has_title</td>
+                <td>Donuts by Jordan Ferguson</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>crm:P2_has_type</td>
+                <td>text</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>dc:description</td>
+                <td>print, unmediated, volume</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>crm:P129_is_about</td>
+                <td>criticism and interpretation, hip-hop</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>dc:isPartOf</td>
+                <td>33 1/3</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>dc:creator</td>
+                <td>Jordan Ferguson</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>schema:releaseDate</td>
+                <td>2014</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>crm:P67_refers_to</td>
+                <td>Stones Throw</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>crm:P67_refers_to</td>
+                <td>Donuts (album)</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>crm:P67_refers_to</td>
+                <td>autoimmune disease</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>foaf:primaryTopic</td>
+                <td>James Dewitt Yancey</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>dbo:numberOfPages</td>
+                <td>136 pages</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>dcterms:spatial</td>
+                <td>New York</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>dc:identifier</td>
+                <td>2013046268</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>dc:identifier</td>
+                <td>&quot;9781623561833&quot;</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>owl:sameAs</td>
+                <td><a href="https://lccn.loc.gov/2013046268" target="_blank">LOC Record</a></td>
+              </tr>
+              </tbody></table>
+          </div>
+          <!--two columns for metadata tables-->
+          <div class="col-6 pt-2">  
+            <div class="d-flex">
+              <div class="p-2 flex-grow-1 "><h4 id="DonutsAlbum">Donuts (Album)</h4></div>
+              <div class="p-2 ">[<a href="data/donuts_album_metadata.csv">csv</a> | <a href="data/donuts_album_metadata.ttl">ttl</a> | <a href="data/donuts_book_metadata.jsonld">json-ld</a>]</div>
+            </div>
+            <table class="table mb-0 table-striped table-bordered"><thead><tr><th scope="col">Subject</th><th scope="col">Predicate</th><th scope="col">Object</th></tr></thead><tbody>
+              <tr>
+                <td>Donuts</td>
+                <td>mo:publisher</td>
+                <td>Stones Throw </td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>crm:P129_is_about</td>
+                <td>popular instrumental music, rap (music)</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>crm:P2_has_type</td>
+                <td>audio</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>schema:MusicReleaseFormatType</td>
+                <td>VinylFormat</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>schema:releaseDate</td>
+                <td>2006</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>dc:description</td>
+                <td>audio discs, analog, 33 1/3 rpm, stereo ; 12 in</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>crm:P50_has_current_keeper</td>
+                <td>St Paul Public Library</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>crm:P67_refers_to</td>
+                <td>autoimmune disease</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>mo:performer</td>
+                <td>J Dilla</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>mo:producer</td>
+                <td>James Dewitt Yancey</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>crm:P102_has_title</td>
+                <td>Donuts</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>frbroo:R10_is_member_of</td>
+                <td>J Dilla discography</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>crm:P7_took_place_at</td>
+                <td>Los Angeles</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>mo:engineer</td>
+                <td>Dave Cooley</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>dc:identifier</td>
+                <td>&quot;659457212612&quot;</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>dc:description</td>
+                <td>Recorded during an extended hospital stay 2005.</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>mo:genre</td>
+                <td>rap (music), songs without words (instrumental music)</td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>mo:discogs</td>
+                <td><a href="https://www.discogs.com/J-Dilla-Donuts/release/619872" target="_blank">Discogs Record</a></td>
+              </tr>
+              <tr>
+                <td>Donuts</td>
+                <td>owl:sameAs</td>
+                <td><a href="https://alpha.stpaul.lib.mn.us/record=b2590835~S16" target="_blank">St Paul Libary Record</a></td>
+              </tr>
+              </tbody></table>
+          </div>
+          <div class="col-6 pt-2">   
+            <div class="d-flex ">
+              <div class="p-2 flex-grow-1 "><h4 id="Welcome2Detroit">Welcome 2 Detroit</h4></div>
+              <div class="p-2 ">[<a href="data/welcome2detroit_metadata.csv">csv</a> | <a href="data/welcome2detroit_metadata.ttl">ttl</a> | <a href="data/welcome2detroit_metadata.jsonld">json-ld</a>]</div>
+            </div>
+            <table class="table mb-0 table-striped table-bordered"><thead><tr><th scope="col">Subject</th><th scope="col">Predicate</th><th scope="col">Object</th></tr></thead><tbody>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>mo:publisher</td>
+                <td>BBE </td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>crm:P129_is_about</td>
+                <td>Rap (music), soul music</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>crm:P2_has_type</td>
+                <td>sound recording-musical</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>schema:MusicRelease<br>FormatType</td>
+                <td>CDFormat</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>schema:releaseDate</td>
+                <td>2001</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>dc:description</td>
+                <td>sound disc, digital, 4 3/4 in</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>crm:P50_has_current_keeper</td>
+                <td>Library of Congress</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>crm:P67_refers_to</td>
+                <td>Detroit</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>mo:producer</td>
+                <td>James Dewitt Yancey</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>crm:P102_has_title</td>
+                <td>Welcome 2 Detroit</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>frbroo:R10_is_member_of</td>
+                <td>Jay Dee discography</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>crm:P7_took_place_at</td>
+                <td>Detroit</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>dc:isPartOf</td>
+                <td>Beat Generation</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>mo:performer</td>
+                <td>Jay Dee aka J Dilla</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>mo:engineer</td>
+                <td>J Dilla</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>mo:engineer</td>
+                <td>Todd Fairall</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>mo:genre</td>
+                <td>hip-hop</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>dc:identifier</td>
+                <td>2015616941</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>dc:spatial</td>
+                <td>London</td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>mo:discogs</td>
+                <td><a href="https://www.discogs.com/J-Dilla-Welcome-2-Detroit/release/13520338" target="_blank">Discogs Record</a></td>
+              </tr>
+              <tr>
+                <td>Welcome 2 Detroit</td>
+                <td>owl:sameAs</td>
+                <td><a href="https://lccn.loc.gov/2015616941" target="_blank">LOC Record</a></td>
+              </tr>
+              </tbody></table>
+          </div>
+          <!--two columns for metadata tables-->
+          <div class="col-6 pt-2">  
+            <div class="d-flex">
+              <div class="p-2 flex-grow-1 "><h4 id="Discographies">Discographies</h4></div>
+              <div class="p-2 ">[<a href="data/discographies_metadata.csv">csv</a> | <a href="data/discographies_metadata.ttl">ttl</a> | <a href="data/discographies_metadata.jsonld">json-ld</a>]</div>
+            </div>
+            <table class="table mb-0 table-striped table-bordered"><thead><tr><th scope="col">Subject</th><th scope="col">Predicate</th><th scope="col">Object</th></tr></thead><tbody>
+              <tr>
+                <td>J Dilla discography</td>
+                <td>frbroo:R16_was_initiated_by</td>
+                <td>James Dewitt Yancey&#39;s production work as J Dilla</td>
+              </tr>
+              <tr>
+                <td>Jay Dee discography</td>
+                <td>frbroo:R16_was_initiated_by</td>
+                <td>James Dewitt Yancey&#39;s production work as Jay Dee</td>
+              </tr>
+              <tr>
+                <td>J Dilla discography</td>
+                <td>crm:P4_has_time-span</td>
+                <td>2001-present</td>
+              </tr>
+              <tr>
+                <td>Jay Dee discography</td>
+                <td>crm:P4_has_time-span</td>
+                <td>1995-2007</td>
+              </tr>
+              <tr>
+                <td>J Dilla discography</td>
+                <td>dc:creator</td>
+                <td>James Dewitt Yancey</td>
+              </tr>
+              <tr>
+                <td>Jay Dee discography</td>
+                <td>dc:creator</td>
+                <td>James Dewitt Yancey</td>
+              </tr>
+              <tr>
+                <td>J Dilla discography</td>
+                <td>frbroo:R64_used_name</td>
+                <td>J Dilla</td>
+              </tr>
+              <tr>
+                <td>Jay Dee discography</td>
+                <td>frbroo:R64_used_name</td>
+                <td>Jay Dee</td>
+              </tr>
+              <tr>
+                <td>J Dilla discography</td>
+                <td>frbroo:R10_has_member</td>
+                <td>Donuts</td>
+              </tr>
+              <tr>
+                <td>Jay Dee discography</td>
+                <td>frbroo:R10_has_member</td>
+                <td>Welcome 2 Detroit</td>
+              </tr>
+              <tr>
+                <td>J Dilla discography</td>
+                <td>crm:P102_has_title</td>
+                <td>J Dilla discography</td>
+              </tr>
+              <tr>
+                <td>Jay Dee discography</td>
+                <td>crm:P102_has_title</td>
+                <td>Jay Dee discography</td>
+              </tr>
+              <tr>
+                <td>J Dilla discography</td>
+                <td>mo:discography</td>
+                <td><a href="https://musicbrainz.org/artist/cbcbb22c-3a8d-46af-b4ba-09c98f0d7931" target="_blank">MusicBrainz Record</a></td>
+              </tr>
+              <tr>
+                <td>Jay Dee discography</td>
+                <td>mo:discography</td>
+                <td><a href="https://musicbrainz.org/artist/439591a7-045d-4f90-86e0-40100506bafd" target="_blank">MusicBrainz Record</a></td>
+              </tr>
+              <tr>
+                <td>J Dilla discography</td>
+                <td>rdf:type</td>
+                <td>web page</td>
+              </tr>
+              <tr>
+                <td>Jay Dee discography</td>
+                <td>rdf:type</td>
+                <td>web page</td>
+              </tr>
+              <tr>
+                <td>J Dilla discography</td>
+                <td>mmd:begin-area</td>
+                <td>Detroit</td>
+              </tr>
+              <tr>
+                <td>Jay Dee discography</td>
+                <td>mmd:begin-area</td>
+                <td>Detroit</td>
+              </tr>
+              <tr>
+                <td>J Dilla discography</td>
+                <td>mmd:end-area</td>
+                <td>Los Angeles</td>
+              </tr>
+              <tr>
+                <td>Jay Dee discography</td>
+                <td>mmd:end-area</td>
+                <td>Los Angeles</td>
+              </tr>
+              <tr>
+                <td>J Dilla discography</td>
+                <td>mo:genre</td>
+                <td>hip-hop, experimental, soul, instrumental</td>
+              </tr>
+              <tr>
+                <td>Jay Dee discography</td>
+                <td>mo:genre</td>
+                <td>hip-hop</td>
+              </tr>
+              <tr>
+                <td>J Dilla discography</td>
+                <td>mmd:artist_id</td>
+                <td>cbcbb22c-3a8d-46af-b4ba-09c98f0d7931</td>
+              </tr>
+              <tr>
+                <td>Jay Dee discography</td>
+                <td>mmd:artist_id</td>
+                <td>439591a7-045d-4f90-86e0-40100506bafd</td>
+              </tr>
+              <tr>
+                <td>J Dilla discography</td>
+                <td>crm:P67_refers_to</td>
+                <td>Jaylib</td>
+              </tr>
+              <tr>
+                <td>Jay Dee discography</td>
+                <td>crm:P67_refers_to</td>
+                <td>Slum Village, 1st Down, J-88, The Soulquarians, The Ummah</td>
+              </tr>
+              <tr>
+                <td>J Dilla discography</td>
+                <td>mo:discogs</td>
+                <td><a href="https://www.discogs.com/artist/324866-J-Dilla" target="_blank">Discogs Record</a></td>
+              </tr>
+              <tr>
+                <td>Jay Dee discography</td>
+                <td>mo:discogs</td>
+                <td><a href="https://www.discogs.com/artist/33373-Jay-Dee" target="_blank">Discogs Record</a></td>
+              </tr>
+              <tr>
+                <td>J Dilla discography</td>
+                <td>ow:sameAs</td>
+                <td><a href="https://musicbrainz.org/artist/cbcbb22c-3a8d-46af-b4ba-09c98f0d7931" target="_blank">MusicBrainz Record</a></td>
+              </tr>
+              <tr>
+                <td>Jay Dee discography</td>
+                <td>ow:sameAs</td>
+                <td><a href="https://musicbrainz.org/artist/439591a7-045d-4f90-86e0-40100506bafd" target="_blank">MusicBrainz Record</a></td>
+              </tr>
+              </tbody></table>
+          </div>
+          <div class="col-6 pt-2">   
+            <div class="d-flex ">
+              <div class="p-2 flex-grow-1 "><h4 id="StudioA">Studio A</h4></div>
+              <div class="p-2 ">[<a href="data/studioA_metadata.csv">csv</a> | <a href="data/studioA_metadata.ttl">ttl</a> | <a href="data/studioA_metadata.jsonld">json-ld</a>]</div>
+            </div>
+            <table class="table mb-0 table-striped table-bordered"><thead><tr><th scope="col">Subject</th><th scope="col">Predicate</th><th scope="col">Object</th></tr></thead><tbody>
+              <tr>
+                <td>Subject</td>
+                <td>Predicate</td>
+                <td>Object</td>
+              </tr>
+              <tr>
+                <td>Studio A </td>
+                <td>crm:P7_witnessed</td>
+                <td>James Dewitt Yancey&#39;s use of studio for recording purposes</td>
+              </tr>
+              <tr>
+                <td>Studio A </td>
+                <td>crm:P107_has_current_member</td>
+                <td>Todd Fairall</td>
+              </tr>
+              <tr>
+                <td>Studio A </td>
+                <td>crm:P67_is_referred_to_by</td>
+                <td>Welcome 2 Detroit</td>
+              </tr>
+              <tr>
+                <td>Studio A </td>
+                <td>crm:P67_is_referred_to_by</td>
+                <td>Our Vinyl Weighs a Ton</td>
+              </tr>
+              <tr>
+                <td>Studio A </td>
+                <td>dc:date</td>
+                <td>1980</td>
+              </tr>
+              <tr>
+                <td>Studio A </td>
+                <td>crm:P53_has_current_location</td>
+                <td>Dearborn, Michigan</td>
+              </tr>
+              <tr>
+                <td>Studio A </td>
+                <td>crm:P2_has_type</td>
+                <td>business</td>
+              </tr>
+              <tr>
+                <td>Studio A </td>
+                <td>dc:description</td>
+                <td>recording, mixing and mastering studio </td>
+              </tr>
+              <tr>
+                <td>Studio A </td>
+                <td>crm:P102_has_title</td>
+                <td>Studio A Recording Inc</td>
+              </tr>
+              <tr>
+                <td>Studio A </td>
+                <td>crm:P52_has_current_owner</td>
+                <td>Eric, Marilyn Morgeson</td>
+              </tr>
+              <tr>
+                <td>Studio A </td>
+                <td>mo:discogs</td>
+                <td><a href="https://www.discogs.com/label/487496-Studio-A-Dearborn-Heights-MI" target="_blank">Discogs Record</a></td>
+              </tr>
+              <tr>
+                <td>Studio A </td>
+                <td>owl:sameAs</td>
+                <td><a href="https://www.discogs.com/label/487496-Studio-A-Dearborn-Heights-MI" target="_blank">Discogs Record</a></td>
+              </tr>
+              </tbody></table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+  
+  <footer class="mt-auto text-50 text-center">
+    <p class="small">A project by <a href="https://twitter.com/laurent_fintoni" class="text-blue" target="_blank">@laurent_fintoni</a> for the Knowledge Organisation and Cultural Heritage course, University of Bologna 2021</p>
+  </footer>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

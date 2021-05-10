@@ -1,0 +1,44 @@
+{
+  "@id": "https://laurentfintoni.github.io/jayinlodee/RDF.html#BrianCross",
+  "http://purl.org/ontology/mo/discogs": {
+    "@id": "https://www.discogs.com/artist/1464782-Brian-Cross-2"
+  },
+  "http://purl.org/ontology/mo/produced": {
+    "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#SuiteForMaDukes"
+  },
+  "http://schema.org/image": {
+    "@id": "https://thecarverystudio.com/wp-content/uploads/2020/06/BrianCross_LA_web-1024x683.jpg"
+  },
+  "http://www.cidoc-crm.org/cidoc-crm#P107_is_current_member_of": "Mochilla",
+  "http://www.cidoc-crm.org/cidoc-crm#P14_performed": {
+    "@id": "https://laurentfintoni.github.io/jayinlodee/RDF.html#JDillaPhotographs"
+  },
+  "http://www.cidoc-crm.org/cidoc-crm#P1_is_identified_by": "B+",
+  "http://www.w3.org/ns/person#citizenship": "Ireland",
+  "http://www.w3.org/ns/person#placeOfBirth": {
+    "@id": "https://dbpedia.org/page/Limerick"
+  },
+  "http://xmlns.com/foaf/0.1/gender": "Male",
+  "http://xmlns.com/foaf/0.1/knows": {
+    "@id": "https://laurentfintoni.github.io/jayinlodee/RDF.html#JamesDewittYancey"
+  },
+  "http://xmlns.com/foaf/0.1/name": "Brian Cross",
+  "https://dbpedia.org/ontology/occupation": {
+    "@id": "http://vocab.getty.edu/aat/300025695"
+  },
+  "https://www.bbc.co.uk/ontologies/coreconcepts/dateOfBirth": {
+    "@type": "http://www.w3.org/2001/XMLSchema#gYear",
+    "@value": "1966"
+  },
+  "https://www.bbc.co.uk/ontologies/coreconcepts/knownFor": "Photography, documentation, working with artists including Eazy-E, J Dilla, DJ Shadow, and Damian Marley.",
+  "https://www.bbc.co.uk/ontologies/coreconcepts/occupation": "Music, culture",
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+    "@id": "http://xmlns.com/foaf/0.1/Person"
+  },
+  "https://www.w3.org/TR/owl2-syntax#sameAs": {
+    "@id": "http://viaf.org/viaf/71486769"
+  },
+  "https://www.w3.org/TR/rdf-schema#seeAlso": {
+    "@id": "https://bplus.photography/bio"
+  }
+}

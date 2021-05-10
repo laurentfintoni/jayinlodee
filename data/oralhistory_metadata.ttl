@@ -1,0 +1,24 @@
+@base <https://laurentfintoni.github.io/jayinlodee/>.
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix owl: <https://www.w3.org/TR/owl2-syntax#>.
+
+<items_data.html#MaureenYanceyOralHistoryInterview>
+    foaf:primaryTopic "James Dewitt Yancey";
+    frbroo:R13_realises	"The recording of the interview";
+    crm:P7_took_place_at "Washington D.C.";
+    dcterms:date	"2016";
+    crm:P2_has_type	"video recordings, oral histories, digital media - born digital";
+    dcterms:creator "National Museum of African American History and Culture";
+    crm:P50_has_current_keeper "National Museum of African American History and Culture";
+    crm:P102_has_title "Maureen Yancey Oral History Interview";
+    crm:P129_is_about "hip hop (music), museums";
+    crm:P70_documents "Maureen Yancey";
+    crm:P67_refers_to "J Dilla";
+    dcterms:isPartOf "The Collection Donor Oral History Project";
+    dcterms:SizeOrDuration "60.4 minutes, 59.8 minutes";
+    dcterms:identifier "2016.129.14.1a-.2a";
+    owl:sameAs <http://n2t.net/ark:/65665/fd5e6894f8e-d477-4660-82b3-a7f9cd68b845>.
+

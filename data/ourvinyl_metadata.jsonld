@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org/",
+  "id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#OurVinylWeighsATon",
+  "http://iflastandards.info/ns/fr/frbr/frbrooR28_was_produced_by": "manufacturing of moving image recordings into DVDs",
+  "dct:description": "Music CD: CD Audio : DVD audio Visual material",
+  "dct:identifier": "884522208",
+  "dct:language": "English",
+  "http://purl.org/ontology/mo/discogs": {
+    "id": "https://www.discogs.com/Various-Our-Vinyl-Weighs-A-Ton-This-Is-Stones-Throw-Records/master/694183"
+  },
+  "http://purl.org/ontology/mo/performer": "Various performers",
+  "director": "Jeff Broadway",
+  "publisher": "Stones Throw",
+  "schema:releaseDate": "2014",
+  "http://www.cidoc-crm.org/cidoc-crm#P102_has_title": "Our Vinyl Weighs a Ton",
+  "http://www.cidoc-crm.org/cidoc-crm#P129_is_about": "Rap (music), Rock music",
+  "http://www.cidoc-crm.org/cidoc-crm#P138_represents": "J Dilla and 30 others",
+  "http://www.cidoc-crm.org/cidoc-crm#P2_has_type": "sound recording, visual material",
+  "http://www.cidoc-crm.org/cidoc-crm#P67_refers_to": [
+    "James Dewitt Yancey",
+    "Los Angeles",
+    "Studio A Recording Inc.",
+    "Donuts (album)",
+    "Detroit"
+  ],
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type": "music documentary",
+  "https://www.w3.org/TR/owl2-syntax#sameAs": {
+    "id": "https://www.worldcat.org/title/our-vinyl-weighs-a-ton/oclc/884522208"
+  }
+}

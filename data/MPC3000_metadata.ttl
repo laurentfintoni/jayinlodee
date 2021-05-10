@@ -1,0 +1,24 @@
+@base <https://laurentfintoni.github.io/jayinlodee/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo>.
+@prefix owl: <https://www.w3.org/TR/owl2-syntax#>.
+@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+<items_data.html#JdillaMPC>
+    dcterms:creator "Roger Linn";
+    frbroo:28_was_produced_by "AKAI Professional";
+    crm:P101_had_as_general_use	"electronic instrument";
+    crm:P45_consists_of	"plastic, rubber, metal";
+    dcterms:date	"2000";
+    crm:P51_has_former_owner "James Dewitt Yancey";
+    crm:P50_has_current_keeper "National Museum of African American History and Culture";
+    crm:P102_has_title "MIDI Production Center 3000 Limited Edition";
+    crm:P53_has_former_location	"Detroit";
+    crm:P53_has_former_location	"Los Angeles";
+    rdf:type "electronic instrument";
+    crm:P43_has_dimension "4 7/8 × 17 3/8 × 15 3/4 in.";
+    crm:P129_is_about "African American, Hip Hop (music), Musicians";
+    dcterms:identifier "2014.139.1";
+    owl:sameAs <http://n2t.net/ark:/65665/fd5250299cc-baec-429a-8d79-390266066e6a>.

@@ -1,0 +1,138 @@
+@base <https://laurentfintoni.github.io/jayinlodee/>.
+@prefix Iptc4xmpExt: <https://www.iptc.org/std/Iptc4xmpCore/1.0/xmlns/>.
+@prefix Iptc4xmpCore: <https://www.iptc.org/std/Iptc4xmpCore/1.0/xmlns/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm#>.
+@prefix owl: <https://www.w3.org/TR/owl2-syntax#>.
+@prefix photoshop: <http://ns.adobe.com/photoshop/1.0/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix schema: <http://schema.org/>.
+@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix core: <https://www.bbc.co.uk/ontologies/coreconcepts/>.
+@prefix dbo: <https://dbpedia.org/ontology/>.
+@prefix gn: <https://www.geonames.org/ontology>.
+@prefix skos: <https://www.w3.org/2009/08/skos-reference/skos.html>.
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo>.
+@prefix wd: <http://www.wikidata.org/entity/>.
+@prefix plink: <http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#>.
+@prefix mo: <http://purl.org/ontology/mo/>.
+@prefix rdfs: <https://www.w3.org/TR/rdf-schema#>.
+
+<RDF.html#JDillaPhotographs>
+	Iptc4xmpExt:PersonInImage <RDF.html#JamesDewittYancey>;
+	Iptc4xmpExt:LocationCreated <RDF.html#Detroit>;
+	dcterms:creator <RDF.html#BrianCross>;
+	crm:P2_has_type <https://dbpedia.org/page/Contact_print>;
+	rdf:type frbroo:F2_Expression;
+	skos:exactMatch crm:E36_Visual_Item;
+	crm:P49_has_former_keeper <http://viaf.org/viaf/295680384>; #Annenberg
+	dcterms:isPartOf <https://dbpedia.org/page/Contact_High:_A_Visual_History_of_Hip-Hop>; #exhibition
+	photoshop:DateCreated "2003"^^xsd:gYear;
+	foaf:primaryTopic <https://viaf.org/viaf/32244000/>; #Jay VIAF
+	dcterms:title "J Dilla, Detroit, 2003";
+	photoshop:AuthorsPosition <http://vocab.getty.edu/page/aat/300025687>; #photographer
+	photoshop:Credit "Brian B+ Cross";
+	photoshop:Source <RDF.html#BrianCross>;
+	photoshop:Source <RDF.html#StonesThrow>;
+	Iptc4xmpExt:LocationShown "J Dilla's home studio";
+	Iptc4xmpCore:IntellectualGenre <https://id.loc.gov/authorities/subjects/sh99001681.html>; #portrait
+	Iptc4xmpExt:Event "Photoshoot for Jaylib album, commissioned by Stones Throw.";
+	schema:image <https://www.annenbergphotospace.org/wp-content/uploads/2019/04/brian-cross-fp-1-3.jpg>;
+	rdfs:seeAlso <https://www.annenbergphotospace.org/person/brian-b-cross/>.
+<RDF.html#BrianCross>
+	rdf:type foaf:Person;
+	foaf:name "Brian Cross";
+	crm:P1_is_identified_by "B+";
+	foaf:gender "Male";
+	person:placeOfBirth <https://dbpedia.org/page/Limerick>;
+	person:citizenship "Ireland";
+	core:dateOfBirth "1966"^^xsd:gYear;
+	core:occupation "Music, culture";
+	core:knownFor "Photography, documentation, working with artists including Eazy-E, J Dilla, DJ Shadow, and Damian Marley.";
+	dbo:occupation <http://vocab.getty.edu/aat/300025695>; #photojournalist 
+	owl:sameAs <http://viaf.org/viaf/71486769>;
+	rdfs:seeAlso <https://bplus.photography/bio>;
+	foaf:knows <RDF.html#JamesDewittYancey>;
+	crm:P14_performed <RDF.html#JDillaPhotographs>;
+	crm:P107_is_current_member_of "Mochilla";
+	mo:produced <items_data.html#SuiteForMaDukes>; 
+	mo:discogs <https://www.discogs.com/artist/1464782-Brian-Cross-2>;
+	schema:image <https://thecarverystudio.com/wp-content/uploads/2020/06/BrianCross_LA_web-1024x683.jpg>.
+<RDF.html#Detroit>
+	rdf:type crm:E53_Place;
+	gn:population "677116";
+	gn:countryCode "US";
+	gn:locationMap <https://www.geonames.org/4990729/detroit.html>;
+	gn:name "Detroit";
+	owl:sameAs <http://viaf.org/viaf/133676653>;
+	rdfs:seeAlso <https://en.wikipedia.org/wiki/Detroit>;
+	crm:P53_is_former_location_of <RDF.html#JamesDewittYancey>;
+	crm:P53_is_former_location_of <items_data.html#JDillaMPC>;
+	crm:P53_is_current_location_of <http://viaf.org/viaf/38150030724010962919>; #Maureen Yancey
+	crm:P53_is_current_location_of <items_data.html#StudioA>;
+	crm:P7_witnessed <RDF.html#JDillaPhotographs>;
+	crm:P7_witnessed <items_data.html#Welcome2Detroit>;
+	crm:P67_is_referred_to_by <items_data.html#Welcome2Detroit>;
+	crm:P67_is_referred_to_by <items_data.html#SuiteForMaDukes>;
+	crm:P67_is_referred_to_by <items_data.html#Discographies>;
+	crm:P67_is_referred_to_by <items_data.html#DonutsBook>;
+	crm:P67_is_referred_to_by <items_data.html#MaureenYanceyOralHistoryInterview>;
+	crm:P67_is_referred_to_by <items_data.html#OurVinylWeighsATon>.
+<RDF.html#JamesDewittYancey>
+	rdf:type foaf:person;
+	foaf:name "James Dewitt Yancey";
+	person:placeOfBirth <RDF.html#Detroit>;
+	person:citizenship "United States";
+	person:placeOfDeath <http://viaf.org/viaf/124053622>; #LosAngeles
+	core:dateOfBirth "1974-02-07"^^xsd:dateTime;
+	core:dateOfDeath "2006-02-10 "^^xsd:dateTime;
+	wd:Property:P509 wd:Q8084905; #autoimmunedisease 
+	core:occupation wd:Q638; #music
+	dbo:occupation wd:Q753110; #songwriter
+	dbo:occupation wd:Q183945; #producer
+	dbo:occupation wd:Q2252262; #rapper
+	core:knownFor "His work with D'Angelo, Madlib, among others, and influencing the development of hip-hop production.";
+	crm:P1_is_identified_by "Jay Dee";
+	crm:P1_is_identified_by "J Dilla";
+	owl:sameAs <https://viaf.org/viaf/32244000/>;
+	owl:sameAs <https://dbpedia.org/page/J_Dilla>;
+	owl:sameAs <https://musicbrainz.org/artist/cbcbb22c-3a8d-46af-b4ba-09c98f0d7931>;
+	owl:sameAs <https://musicbrainz.org/artist/cbcbb22c-3a8d-46af-b4ba-09c98f0d7931>;
+	mo:discography <https://www.discogs.com/artist/324866-J-Dilla>;
+	mo:discography <https://www.discogs.com/artist/33373-Jay-Dee>;
+	plink:BiologicalSonOf <http://viaf.org/viaf/38150030724010962919>; #MaureenYancey
+	foaf:knows <RDF.html#BrianCross>;
+	crm:P107_is_former_member_of <RDF.html#StonesThrow>;
+	crm:P51_is_former_owner_of <items_data.html#JDillaMPC>;
+	crm:P138_has_representation <RDF.html#JDillaPhotographs>;
+	mo:produced <items_data.html#DonutsAlbum>;
+	mo:produced <items_data.html#Welcome2Detroit>;
+	mo:engineered <items_data.html#Welcome2Detroit>;
+	dcterms:creator <items_data.html#Discographies>;
+	crm:P107_is_former_member_of <items_data.html#StudioA>;
+	crm:P129_is_subject_of <items_data.html#SuiteForMaDukes>;
+	foaf:isPrimaryTopicOf <items_data.html#DonutsBook>;
+	foaf:isPrimaryTopicOf <items_data.html#MaureenYanceyOralHistoryInterview>;
+	crm:P67_is_referred_to_by <items_data.html#OurVinylWeighsATon>.
+<RDF.html#StonesThrow>
+	rdf:type frbroo:F11_Corporate_Body;
+	dbo:foundingYear "1996"^^xsd:gYear;
+	dbo:foundedBy "Peanut Butter Wolf";
+	rdfs:seeAlso <https://www.stonesthrow.com/about/>; #history
+	owl:sameAs <http://viaf.org/viaf/107146937852013832489>;
+	crm:P52_has_current_owner <http://viaf.org/viaf/11699888>; #ChrisManak
+	dcterms:spatial <http://viaf.org/viaf/124053622>; #LosAngeles
+	crm:P2_has_type "record label";
+	skos:exactMatch wd:Q18127; #recordlabel;
+	mo:discogs <https://www.discogs.com/label/1217-Stones-Throw-Records>;
+	mo:published <items_data.html#DonutsAlbum>;
+	dcterms:creator <items_data.html#OurVinylWeighsATon>;
+	foaf:isPrimaryTopicOf <items_data.html#OurVinylWeighsATon>;
+	crm:P14_performed <RDF.html#JDillaPhotographs>;
+	crm:P67_is_referred_to_by <items_data.html#JDillaDiscography>;
+	crm:P67_is_referred_to_by <items_data.html#SuiteForMaDukes>;
+	crm:P67_is_referred_to_by <items_data.html#DonutsBook>;	
+	foaf:knows <http://viaf.org/viaf/38150030724010962919>; #MaureenYancey
+	foaf:knows <RDF.html#BrianCross>.

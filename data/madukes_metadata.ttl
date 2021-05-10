@@ -1,0 +1,25 @@
+@base <https://laurentfintoni.github.io/jayinlodee/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo>.
+@prefix mo: <http://purl.org/ontology/mo/>.
+
+<items_data.html#SuiteForMaDukes>
+    foaf:primaryTopic "James Dewitt Yancey";
+    crm:P11_had_participant	"Maureen Yancey";
+    mo:producer	"Mochilla";
+    frbroo:R25_was_performed_in	"set of instructions for the concert performance";
+    dcterms:date "22 February 2009"; 
+    mo:conductor "Miguel Atwood-Ferguson";
+    crm:P2_has_type	"orchestral concert";
+    crm:P102_has_title "Suite For Ma Dukes: The Music of James “Dilla” Yancey";
+    crm:P7_took_place_at "Harriet and Charles Luckman Fine Arts Complex";
+    dcterms:isPartOf "Timeless";
+    mo:genre "hip-hop, jazz, classical";
+    dcterms:language "English";
+    crm:P67_refers_to "Donuts";
+    mo:performer "Various performers";
+    mo:composer	"James Dewitt Yancey";
+    mo:available_as	"vinyl album";
+    mo:discogs  <https://www.discogs.com/Miguel-Atwood-Ferguson-Mochilla-Presents-Timeless-Suite-For-Ma-Dukes-The-Music-Of-James-J-Dilla-Yanc/release/2554289>.

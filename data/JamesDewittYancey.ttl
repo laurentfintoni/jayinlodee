@@ -1,0 +1,51 @@
+@base <https://laurentfintoni.github.io/jayinlodee/>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm#>.
+@prefix owl: <https://www.w3.org/TR/owl2-syntax#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix person: <http://www.w3.org/ns/person#>.
+@prefix core: <https://www.bbc.co.uk/ontologies/coreconcepts/>.
+@prefix dbo: <https://dbpedia.org/ontology/>.
+@prefix skos: <https://www.w3.org/2009/08/skos-reference/skos.html>.
+@prefix wd: <http://www.wikidata.org/entity/>.
+@prefix plink: <http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#>.
+@prefix mo: <http://purl.org/ontology/mo/>.
+
+<RDF.html#JamesDewittYancey>
+	rdf:type foaf:person;
+	foaf:name "James Dewitt Yancey";
+	person:placeOfBirth <RDF.html#Detroit>;
+	person:citizenship "United States";
+	person:placeOfDeath <http://viaf.org/viaf/124053622>; #LosAngeles
+	core:dateOfBirth "1974-02-07"^^xsd:dateTime;
+	core:dateOfDeath "2006-02-10 "^^xsd:dateTime;
+	wd:Property:P509 wd:Q8084905; #autoimmunedisease 
+	core:occupation wd:Q638; #music
+	dbo:occupation wd:Q753110; #songwriter
+	dbo:occupation wd:Q183945; #producer
+	dbo:occupation wd:Q2252262; #rapper
+	core:knownFor "His work with D'Angelo, Madlib, among others, and influencing the development of hip-hop production.";
+	crm:P1_is_identified_by "Jay Dee";
+	crm:P1_is_identified_by "J Dilla";
+	owl:sameAs <https://viaf.org/viaf/32244000/>;
+	owl:sameAs <https://dbpedia.org/page/J_Dilla>;
+	owl:sameAs <https://musicbrainz.org/artist/cbcbb22c-3a8d-46af-b4ba-09c98f0d7931>;
+	owl:sameAs <https://musicbrainz.org/artist/cbcbb22c-3a8d-46af-b4ba-09c98f0d7931>;
+	mo:discography <https://www.discogs.com/artist/324866-J-Dilla>;
+	mo:discography <https://www.discogs.com/artist/33373-Jay-Dee>;
+	plink:BiologicalSonOf <http://viaf.org/viaf/38150030724010962919>; #MaureenYancey
+	foaf:knows <RDF.html#BrianCross>;
+	crm:P107_is_former_member_of <RDF.html#StonesThrow>;
+	crm:P51_is_former_owner_of <items_data.html#JDillaMPC>;
+	crm:P138_has_representation <RDF.html#JDillaPhotographs>;
+	mo:produced <items_data.html#DonutsAlbum>;
+	mo:produced <items_data.html#Welcome2Detroit>;
+	mo:engineered <items_data.html#Welcome2Detroit>;
+	dcterms:creator <items_data.html#Discographies>;
+	crm:P107_is_former_member_of <items_data.html#StudioA>;
+	crm:P129_is_subject_of <items_data.html#SuiteForMaDukes>;
+	foaf:isPrimaryTopicOf <items_data.html#DonutsBook>;
+	foaf:isPrimaryTopicOf <items_data.html#MaureenYanceyOralHistoryInterview>;
+	crm:P67_is_referred_to_by <items_data.html#OurVinylWeighsATon>.

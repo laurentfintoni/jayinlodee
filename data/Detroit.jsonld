@@ -1,0 +1,62 @@
+{
+  "@id": "https://laurentfintoni.github.io/jayinlodee/RDF.html#Detroit",
+  "http://www.cidoc-crm.org/cidoc-crm#P53_is_current_location_of": [
+    {
+      "@id": "http://viaf.org/viaf/38150030724010962919"
+    },
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#StudioA"
+    }
+  ],
+  "http://www.cidoc-crm.org/cidoc-crm#P53_is_former_location_of": [
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/RDF.html#JamesDewittYancey"
+    },
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#JDillaMPC"
+    }
+  ],
+  "http://www.cidoc-crm.org/cidoc-crm#P67_is_referred_to_by": [
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#Welcome2Detroit"
+    },
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#SuiteForMaDukes"
+    },
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#Discographies"
+    },
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#DonutsBook"
+    },
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#MaureenYanceyOralHistoryInterview"
+    },
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#OurVinylWeighsATon"
+    }
+  ],
+  "http://www.cidoc-crm.org/cidoc-crm#P7_witnessed": [
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/RDF.html#JDillaPhotographs"
+    },
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#Welcome2Detroit"
+    }
+  ],
+  "https://www.geonames.org/ontologycountryCode": "US",
+  "https://www.geonames.org/ontologylocationMap": {
+    "@id": "https://www.geonames.org/4990729/detroit.html"
+  },
+  "https://www.geonames.org/ontologyname": "Detroit",
+  "https://www.geonames.org/ontologypopulation": "677116",
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+    "@id": "http://www.cidoc-crm.org/cidoc-crm#E53_Place"
+  },
+  "https://www.w3.org/TR/owl2-syntax#sameAs": {
+    "@id": "http://viaf.org/viaf/133676653"
+  },
+  "https://www.w3.org/TR/rdf-schema#seeAlso": {
+    "@id": "https://en.wikipedia.org/wiki/Detroit"
+  }
+}

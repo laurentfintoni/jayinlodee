@@ -1,0 +1,22 @@
+﻿Subject,Predicate,Object
+Welcome 2 Detroit,mo:publisher,BBE 
+Welcome 2 Detroit,crm:P129_is_about,"Rap (music), soul music"
+Welcome 2 Detroit,crm:P2_has_type,sound recording-musical
+Welcome 2 Detroit,schema:MusicReleaseFormatType,CDFormat
+Welcome 2 Detroit,schema:releaseDate,2001
+Welcome 2 Detroit,dc:description,"sound disc, digital, 4 3/4 in"
+Welcome 2 Detroit,crm:P50_has_current_keeper,Library of Congress
+Welcome 2 Detroit,crm:P67_refers_to,Detroit
+Welcome 2 Detroit,mo:producer,James Dewitt Yancey
+Welcome 2 Detroit,crm:P102_has_title,Welcome 2 Detroit
+Welcome 2 Detroit,frbroo:R10_is_member_of,Jay Dee discography
+Welcome 2 Detroit,crm:P7_took_place_at,Detroit
+Welcome 2 Detroit,dc:isPartOf,Beat Generation
+Welcome 2 Detroit,mo:performer,Jay Dee aka J Dilla
+Welcome 2 Detroit,mo:engineer,J Dilla
+Welcome 2 Detroit,mo:engineer,Todd Fairall
+Welcome 2 Detroit,mo:genre,hip-hop
+Welcome 2 Detroit,dc:identifier,2015616941
+Welcome 2 Detroit,dc:spatial,London
+Welcome 2 Detroit,mo:discogs,https://www.discogs.com/J-Dilla-Welcome-2-Detroit/release/13520338
+Welcome 2 Detroit,owl:sameAs,https://lccn.loc.gov/2015616941

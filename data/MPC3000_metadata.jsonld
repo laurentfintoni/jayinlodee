@@ -1,0 +1,22 @@
+{
+  "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#JdillaMPC",
+  "http://iflastandards.info/ns/fr/frbr/frbroo28_was_produced_by": "AKAI Professional",
+  "http://purl.org/dc/terms/creator": "Roger Linn",
+  "http://purl.org/dc/terms/date": "2000",
+  "http://purl.org/dc/terms/identifier": "2014.139.1",
+  "http://www.cidoc-crm.org/cidoc-crm#P101_had_as_general_use": "electronic instrument",
+  "http://www.cidoc-crm.org/cidoc-crm#P102_has_title": "MIDI Production Center 3000 Limited Edition",
+  "http://www.cidoc-crm.org/cidoc-crm#P129_is_about": "African American, Hip Hop (music), Musicians",
+  "http://www.cidoc-crm.org/cidoc-crm#P43_has_dimension": "4 7/8 × 17 3/8 × 15 3/4 in.",
+  "http://www.cidoc-crm.org/cidoc-crm#P45_consists_of": "plastic, rubber, metal",
+  "http://www.cidoc-crm.org/cidoc-crm#P50_has_current_keeper": "National Museum of African American History and Culture",
+  "http://www.cidoc-crm.org/cidoc-crm#P51_has_former_owner": "James Dewitt Yancey",
+  "http://www.cidoc-crm.org/cidoc-crm#P53_has_former_location": [
+    "Detroit",
+    "Los Angeles"
+  ],
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type": "electronic instrument",
+  "https://www.w3.org/TR/owl2-syntax#sameAs": {
+    "@id": "http://n2t.net/ark:/65665/fd5250299cc-baec-429a-8d79-390266066e6a"
+  }
+}

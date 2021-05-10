@@ -1,0 +1,111 @@
+{
+  "@id": "https://laurentfintoni.github.io/jayinlodee/RDF.html#JamesDewittYancey",
+  "http://cedric.cnam.fr/isid/ontologies/PersonLink.owl#BiologicalSonOf": {
+    "@id": "http://viaf.org/viaf/38150030724010962919"
+  },
+  "http://purl.org/dc/terms/creator": {
+    "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#Discographies"
+  },
+  "http://purl.org/ontology/mo/discography": [
+    {
+      "@id": "https://www.discogs.com/artist/324866-J-Dilla"
+    },
+    {
+      "@id": "https://www.discogs.com/artist/33373-Jay-Dee"
+    }
+  ],
+  "http://purl.org/ontology/mo/engineered": {
+    "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#Welcome2Detroit"
+  },
+  "http://purl.org/ontology/mo/produced": [
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#DonutsAlbum"
+    },
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#Welcome2Detroit"
+    }
+  ],
+  "http://www.cidoc-crm.org/cidoc-crm#P107_is_former_member_of": [
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/RDF.html#StonesThrow"
+    },
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#StudioA"
+    }
+  ],
+  "http://www.cidoc-crm.org/cidoc-crm#P129_is_subject_of": {
+    "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#SuiteForMaDukes"
+  },
+  "http://www.cidoc-crm.org/cidoc-crm#P138_has_representation": {
+    "@id": "https://laurentfintoni.github.io/jayinlodee/RDF.html#JDillaPhotographs"
+  },
+  "http://www.cidoc-crm.org/cidoc-crm#P1_is_identified_by": [
+    "Jay Dee",
+    "J Dilla"
+  ],
+  "http://www.cidoc-crm.org/cidoc-crm#P51_is_former_owner_of": {
+    "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#JDillaMPC"
+  },
+  "http://www.cidoc-crm.org/cidoc-crm#P67_is_referred_to_by": {
+    "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#OurVinylWeighsATon"
+  },
+  "http://www.w3.org/ns/person#citizenship": "United States",
+  "http://www.w3.org/ns/person#placeOfBirth": {
+    "@id": "https://laurentfintoni.github.io/jayinlodee/RDF.html#Detroit"
+  },
+  "http://www.w3.org/ns/person#placeOfDeath": {
+    "@id": "http://viaf.org/viaf/124053622"
+  },
+  "http://www.wikidata.org/entity/Property:P509": {
+    "@id": "http://www.wikidata.org/entity/Q8084905"
+  },
+  "http://xmlns.com/foaf/0.1/isPrimaryTopicOf": [
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#DonutsBook"
+    },
+    {
+      "@id": "https://laurentfintoni.github.io/jayinlodee/items_data.html#MaureenYanceyOralHistoryInterview"
+    }
+  ],
+  "http://xmlns.com/foaf/0.1/knows": {
+    "@id": "https://laurentfintoni.github.io/jayinlodee/RDF.html#BrianCross"
+  },
+  "http://xmlns.com/foaf/0.1/name": "James Dewitt Yancey",
+  "https://dbpedia.org/ontology/occupation": [
+    {
+      "@id": "http://www.wikidata.org/entity/Q753110"
+    },
+    {
+      "@id": "http://www.wikidata.org/entity/Q183945"
+    },
+    {
+      "@id": "http://www.wikidata.org/entity/Q2252262"
+    }
+  ],
+  "https://www.bbc.co.uk/ontologies/coreconcepts/dateOfBirth": {
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value": "1974-02-07"
+  },
+  "https://www.bbc.co.uk/ontologies/coreconcepts/dateOfDeath": {
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value": "2006-02-10 "
+  },
+  "https://www.bbc.co.uk/ontologies/coreconcepts/knownFor": "His work with D'Angelo, Madlib, among others, and influencing the development of hip-hop production.",
+  "https://www.bbc.co.uk/ontologies/coreconcepts/occupation": {
+    "@id": "http://www.wikidata.org/entity/Q638"
+  },
+  "https://www.w3.org/1999/02/22-rdf-syntax-ns#type": {
+    "@id": "http://xmlns.com/foaf/0.1/person"
+  },
+  "https://www.w3.org/TR/owl2-syntax#sameAs": [
+    {
+      "@id": "https://viaf.org/viaf/32244000/"
+    },
+    {
+      "@id": "https://dbpedia.org/page/J_Dilla"
+    },
+    {
+      "@id": "https://musicbrainz.org/artist/cbcbb22c-3a8d-46af-b4ba-09c98f0d7931"
+    }
+  ]
+}

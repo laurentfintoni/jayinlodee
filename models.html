@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Various graph models representing the relationships between entities and cultural heritage items related to J Dilla.">
+  <meta name="author" content="Laurent Fintoni">
+  <title>Modelling - Jay in LODee</title>
+  
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  
+  <!-- Custom styles for this template -->
+  <link href="css/jaydeelod.css" rel="stylesheet">
+
+  <!-- Animation CSS-->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body class="d-flex h-100 text-black bg-light bg-gradient">
+  <div class="container d-flex w-100 h-100 p-3 flex-column">
+    <header class="mb-auto">
+      <nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="navbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#jaynavbar" aria-controls="jaynavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-md-center" id="jaynavbar">
+            <a class="navbar-brand" href="index.html">Jay In LODee</a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="domain.html">Domain</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="dropdown1" data-bs-toggle="dropdown" aria-expanded="false" href="#">Items</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                  <li><a class="dropdown-item" href="items.html">Selection</a></li>
+                  <li><a class="dropdown-item" href="items_alignment.html">Alignment</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="models.html" tabindex="-1">Models</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown2" data-bs-toggle="dropdown" aria-expanded="false">Data</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                  <li><a class="dropdown-item" href="items_data.html">Items Data</a></li>
+                  <li><a class="dropdown-item" href="RDF.html">RDF</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <div class="mx-auto py-md-3">
+        <div class="shadow-lg p-4 mb-2 bg-body rounded">
+          <h4 class="animate__animated animate__slideInLeft d-flex justify-content-center pb-3">Modelling the domain in 4 steps</h4>
+          <p>A note on the modelling steps: my first attempt at modelling the domain took me quite far into the process, up to step 3, and so I spent quite a lot of time going back and forth between the various stages as well as the metadata analysis and alignment, which might mean there's a few inconsistencies here and there.</p>
+          <p>The color legends for the first 3 steps are:</p>
+          <ul>
+            <li class="text-danger">Red: subject</li>
+            <li class="text-success">Green: item</li>
+            <li class="text-warning">Yellow: important entity with additional relationships</li>
+          </ul>
+          <p>All images can be clicked through for full resolution and downloaded from GitHub as svg files.</p>
+          <h4>Step 1 - Conceptual Map</h4>
+          <p>The first modelling step was an attempt at explaining the scenario by representing the real data from the chosen items alongside the explicit relationships. </p>
+          <p>The main takeaway from this for me was that the chosen items could allow for a variety of connections both within and without the domain. This was further expanded upon in later steps while keeping it focused to entities that were most relevant to this particular snapshot of Yancey's life and death.</p>
+          <div class="container pb-3">
+            <a href="data/conceptualmap_new.svg" target="_blank"><img src="data/conceptualmap_new.svg" class="img-fluid rounded" alt="conceptual map"></a>
+          </div>
+          
+          <h4>Step 2 - E/R Model</h4>
+          <p>The next step involved translating the conceptual map into an Entity/Relationship model. Early attempts at this produced a large model that became unwieldy in its representation. As such I ultimately decided to use yED's inbuilt E/R icons, including the entity with attribute icon, to group attributes without additional relationships under the item, thus making the model a little clearer while also bringing forward the depth of interconnections available.</p>
+          <div class="container pb-3">
+            <a href="data/er_model_final.svg" target="_blank"><img src="data/er_model_final.svg" class="img-fluid rounded" alt="entity relationship model"></a>
+          </div>
+          
+          <h4>Step 3 - Theoretical Model</h4>
+          <p>We then move to the theoretical model, which essentially translates the E/R model into a first level of abstraction. This was also the stage at which we were asked to think about additional data to add to the models, but as mentioned above I had already started doing this at an earlier stage and very much realised I had to stop myself if I wanted to keep this manageable (and also because I had to go back and fix a bunch of things!).</p>
+          <p>In terms of the who/where/when/what questions that the model had to answer here are some of the notes from the process:</p>
+          <ul>
+            <li>Who: I added some properties to the person at the center of the domain (birth, death, cause of death) which were connected to other entities/items. I also tried to reflect as many of the interpersonal relations that exist/ed between agents such as Yancey, his mother, and the labels and people he worked with and who documented him</li>
+            <li>Where: This is mainly about geographical locations as well as holding institutions. The trickiest one was the idea of place as related to the beginning and end of Yancey's career as represented by the discographies and detailed in the MusicBrainz metadata of the pages</li>
+            <li>When: This was the most limited range. There’s really two data types for this: single dates (years and a specific day in case of the event) and time-spans (date ranges). All dates relate in some way to either creation, production, or publication </li>
+            <li>What: In contrast to the above, this was the range with the widest potential (alongside Who if that were to be expanded beyond the boundaries of the domain's snapshot). I chose to focus that question on item types, physical and topical descriptions, connections between items (such as an item being included in the scope of another, or related to it topically etc...)</li>
+          </ul>
+          <div class="container pb-3">
+            <a href="data/theoretical_model_final.svg" target="_blank"><img src="data/theoretical_model_final.svg" class="img-fluid rounded" alt="theoretical model"></a>
+          </div>
+          
+          <h4>Step 4 - Conceptual Model</h4>
+          <p>The fourth and final modelling step was to take the theoretical model and refine the abstraction of the domain using existing ontologies and vocabularies. This was done using the standards highlighted in the analysis/alignment phase as well as some additional generic and specific ones such as: </p>
+          <ul>
+            <li>rdf/s: to show some of the class structures and item labels, for ease of reading</li>
+            <li>foaf, wd, xsd, and ti: to help simplify some property descriptions like subject of and time spans</li>
+            <li>mo, pro: to help describe production/publishing relationships which were quite unwieldy to do in CIDOC-CRM/FRBROO</li>
+          </ul> 
+          <p>I did my best to try and keep the model as simple as possible while still reflecting all the possible details and relationships that were included in previous stages. I think the final result once again shows the potential depth of the domain and how intricate it could become if we went past the additional entities I limited myself to or if we were able to use items with additional qualities (like for example some personal recordings Yancey made for himself, records he owned etc...). I'll return to these last two ideas in my conclusion.</p>
+          <div class="container pb-3">
+          <a href="data/conceptual_model_final.svg" target="_blank"><img src="data/conceptual_model_final.svg" class="img-fluid rounded" alt="final conceptual model"></a></div>
+        </div>
+      </div>
+      
+    </main>
+    
+    <footer class="mt-auto text-50 text-center">
+      <p class="small">A project by <a href="https://twitter.com/laurent_fintoni" class="text-blue" target="_blank">@laurent_fintoni</a> for the Knowledge Organisation and Cultural Heritage course, University of Bologna 2021</p>
+    </footer>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  
+  
+</body>
+</html>

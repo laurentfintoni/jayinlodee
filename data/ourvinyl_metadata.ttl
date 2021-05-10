@@ -1,0 +1,31 @@
+@base <https://laurentfintoni.github.io/jayinlodee/>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm#>.
+@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo>.
+@prefix mo: <http://purl.org/ontology/mo/>.
+@prefix schema: <http://schema.org/>.
+@prefix rdf: <https://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix owl: <https://www.w3.org/TR/owl2-syntax#>.
+
+<items_data.html#OurVinylWeighsATon>
+    schema:publisher "Stones Throw";
+    frbroo:R28_was_produced_by "manufacturing of moving image recordings into DVDs";
+    rdf:type "music documentary";
+    crm:P138_represents	"J Dilla and 30 others";
+    crm:P129_is_about "Rap (music), Rock music";
+    crm:P2_has_type	"sound recording, visual material";
+    crm:P102_has_title "Our Vinyl Weighs a Ton";   
+    schema:releaseDate "2014";
+    dcterms:description "Music CD: CD Audio : DVD audio Visual material";
+    crm:P67_refers_to "James Dewitt Yancey";
+    crm:P67_refers_to "Los Angeles";
+    crm:P67_refers_to "Studio A Recording Inc.";
+    crm:P67_refers_to "Donuts (album)";
+    crm:P67_refers_to "Detroit";
+    dcterms:language "English";
+    dcterms:identifier "884522208";
+    owl:sameAs <https://www.worldcat.org/title/our-vinyl-weighs-a-ton/oclc/884522208>;
+    mo:performer "Various performers";
+    schema:director	"Jeff Broadway";
+    mo:discogs <https://www.discogs.com/Various-Our-Vinyl-Weighs-A-Ton-This-Is-Stones-Throw-Records/master/694183>.

@@ -1,0 +1,21 @@
+﻿Subject,Predicate,Object
+Our Vinyl Weighs a Ton,schema:publisher,Stones Throw 
+Our Vinyl Weighs a Ton,frbroo:R28_was_produced_by,manufacturing of moving image recordings into DVDs
+Our Vinyl Weighs a Ton,rdf:type,music documentary
+Our Vinyl Weighs a Ton,crm:P138_represents,J Dilla and 30 others
+Our Vinyl Weighs a Ton,crm:P129_is_about,"Rap (music), Rock music"
+Our Vinyl Weighs a Ton,crm:P2_has_type,"sound recording, visual material"
+Our Vinyl Weighs a Ton,crm:P102_has_title,Our Vinyl Weighs a Ton
+Our Vinyl Weighs a Ton,schema:releaseDate,2014
+Our Vinyl Weighs a Ton,dc:description,Music CD: CD Audio : DVD audio Visual material
+Our Vinyl Weighs a Ton,crm:P67_refers_to,James Dewitt Yancey
+Our Vinyl Weighs a Ton,crm:P67_refers_to,Los Angeles
+Our Vinyl Weighs a Ton,crm:P67_refers_to,Studio A Recording Inc. 
+Our Vinyl Weighs a Ton,crm:P67_refers_to,Donuts (album)
+Our Vinyl Weighs a Ton,crm:P67_refers_to,Detroit
+Our Vinyl Weighs a Ton,dc:language,English
+Our Vinyl Weighs a Ton,dc:identifier,884522208
+Our Vinyl Weighs a Ton,owl:sameAs,https://www.worldcat.org/title/our-vinyl-weighs-a-ton/oclc/884522208
+Our Vinyl Weighs a Ton,mo:performer,Various performers
+Our Vinyl Weighs a Ton,schema:director,Jeff Broadway
+Our Vinyl Weighs a Ton,mo:discogs,https://www.discogs.com/Various-Our-Vinyl-Weighs-A-Ton-This-Is-Stones-Throw-Records/master/694183
