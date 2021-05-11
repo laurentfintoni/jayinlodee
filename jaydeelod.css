@@ -1,6 +1,20 @@
 /* building this from various bits of the template pack */
 
+/* bg images */
 
+#index {
+      background-image: url(images/jaydeebg1.png); 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+#altbg {
+    background-image: url(images/jaydeebg2.png); 
+      background-repeat: no-repeat; 
+      background-size: cover;
+      box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
 
 /* adding arrows to <li> list items */
 .icon-list {
@@ -41,19 +55,6 @@ body {
 
 /* cover css */
 
-/*
- * Globals
- */
-
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-}
-
 
 /*
  * Base structure
@@ -63,6 +64,13 @@ body {
   max-width: 42em;
 }
 
-/* animation */
+/* content */
 
+.contentscroll {
+  max-width: 100vw;
+  max-height: 100vh;
+}
 
+.footer-container {
+  max-width: 42em;
+}
