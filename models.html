@@ -11,19 +11,23 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
   
   <!-- Custom styles for this template -->
-  <link href="css/jaydeelod.css" rel="stylesheet">
+  <link href="jaydeelod.css" rel="stylesheet">
 
   <!-- Animation CSS-->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+
+  <!-- Font CSS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
 </head>
 
-<body class="d-flex h-100 text-black bg-light bg-gradient">
-  <div class="container d-flex w-100 h-100 p-3 flex-column">
+<body id="altbg" class="d-flex h-100 text-black">
+  <div class="d-flex w-100 h-100 p-3 flex-column">
     <header class="mb-auto">
-      <nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark rounded" aria-label="navbar">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#jaynavbar" aria-controls="jaynavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -58,9 +62,9 @@
     </header>
     
     <main>
-      <div class="mx-auto py-md-3">
+      <div class="container mx-auto py-md-3">
         <div class="shadow-lg p-4 mb-2 bg-body rounded">
-          <h4 class="animate__animated animate__slideInLeft d-flex justify-content-center pb-3">Modelling the domain in 4 steps</h4>
+          <h4 class="d-flex justify-content-center pb-3">Modelling the domain in 4 steps</h4>
           <p>A note on the modelling steps: my first attempt at modelling the domain took me quite far into the process, up to step 3, and so I spent quite a lot of time going back and forth between the various stages as well as the metadata analysis and alignment, which might mean there's a few inconsistencies here and there.</p>
           <p>The color legends for the first 3 steps are:</p>
           <ul>
@@ -110,9 +114,11 @@
       
     </main>
     
-    <footer class="mt-auto text-50 text-center">
-      <p class="small">A project by <a href="https://twitter.com/laurent_fintoni" class="text-blue" target="_blank">@laurent_fintoni</a> for the Knowledge Organisation and Cultural Heritage course, University of Bologna 2021</p>
+    <div class="footer-container pt-3 d-flex w-100 h-100 mx-auto">
+      <footer class="mt-auto text-white-50 text-center">
+      <p class="small">A project by <a href="https://twitter.com/laurent_fintoni" class="text-white" target="_blank">@laurent_fintoni</a> for the Knowledge Organisation and Cultural Heritage course, University of Bologna 2021. All photographs of J Dilla by <a href="http://www.mochilla.com/bplus" target="_blank" class="text-white">Brian Cross</a> unless otherwise specified</p>
     </footer>
+  </div> 
   </div>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>

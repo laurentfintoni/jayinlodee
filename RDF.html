@@ -11,19 +11,23 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
   
   <!-- Custom styles for this template -->
-  <link href="css/jaydeelod.css" rel="stylesheet">
+  <link href="jaydeelod.css" rel="stylesheet">
   
   <!-- Animation CSS-->
   <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+
+  <!-- Font CSS-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
 </head>
 
-<body class="d-flex h-100 text-black bg-light bg-gradient">
-  <div class="container d-flex w-100 h-100 p-3 flex-column">
+<body id="altbg" class="d-flex h-100 text-black">
+  <div class="d-flex w-100 h-100 p-3 flex-column">
     <header class="mb-auto">
-      <nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark rounded" aria-label="navbar">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#jaynavbar" aria-controls="jaynavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -58,7 +62,7 @@
     </header>
     
     <main>
-      <div class="mx-auto py-md-3">
+      <div class="container mx-auto py-md-3">
         <div class="shadow-lg p-4 mb-2 bg-body rounded">
           <h4 class="animate__animated animate__slideInLeft d-flex justify-content-center pb-3">More RDF Data (this time entities!) and URIs</h4>
           <p>The last step of the project asked us to choose one item and to mint URIs representing all its entities, and then to link all those together through the who/where/when/what perspective in an RDF file. As per the requirements, the described item and its related entities were connected to other items and entities wherever possible (within and without the domain) as well as to relevant authorities and resources using a variety of semantic associations.</p>
@@ -124,7 +128,7 @@
                   <p>A conclusion wasn't a requirement of the project but as I got further into it I accumulated more thoughts and ideas that I want to put somewhere, even if only so I can revisit them as I continue this course and my work in and around LOD and LAM. Also an academic project without a conclusion feels weird?</p>
                   <p>Returning to the points I made in the domain study, the lack of diversity around items is I think one of the important take-aways from this exercise. As it relates to Yancey it's not that there isn't a diversity of items, but rather what is publicly available isn't diverse. As mentioned in the introduction the legal side of his legacy is somewhat complicated - involving an estate and separate foundations. This has led to a lot of important items and pieces of Yancey's history to be sold for profit or monetized in some way, including eBay auctions of records and post-humous albums. Maureen's donation to the Smithsonian is the one bright note for now and as far as I can tell it's probably tied to the discovery of a locker in Detroit that contained a vast amount of Yancey's records and other items, incuding the Minimoog. Partial documentation of what was found in this locker came out online at the time but it's hard to say what has already been sold, or even exactly what was in there. I spoke with Eothen Alapatt during my early research for this. Alapatt is the creative director of the estate and worked closely with Yancey in his last years. He told me that the estate itself has little in the way of artifacts or items. The bulk of their work focuses on monetising Yancey's creative IPs to bring the estate out of debt (and back to the family). In 2016, they issued his lost album for which there exists physical tapes that have just as much historical value as the MPC and Minimoog (if not more). Lastly, in 2019 a close friend and collaborator of Yancey, Waajeed, exhibited a collection of photos he took between 1997 and 1999 that document Yancey's work within the music industry in NYC under the alias John Doe, a period that remains poorly detailed. Again these are the kinds of item that warrant preservation and documentation. </p>
                   <p>Regarding the usefulness of LOD approaches to something like Yancey's legacy - and in turn to the wider idea of modern music archiving - doing the modelling got me thinking a lot about how this could be useful in building data that can in turn be used for visualisation, search, and other digital applications (like museum exhibits). Thinking about the discography, you could arguably attempt to build a full ontological map/model of his output, relating to people he sampled, people he collaborated with, labels, etc... There has been some visualisation of Yancey's sampling work but this is an area that feels full of potential considering the importance of sampling to modern music. An important note regarding sampling - any such efforts need to also take into account the dangers associated with revealing too much of what was sampled considering the current state of copyright laws as well as the desire by artists to perhaps not have the secret behind their work be too deeply detailed.                     
-                  </p>There is a lot more to be said and to be honest I'm still learning, reading, and digesting. I do however want to end by touching on some invigorating ideas I came across in Megan Ward and Adrian S. Wisnicki's "The Archive After Theory", from <a href="https://dhdebates.gc.cuny.edu/read/untitled-f2acf72c-a469-49d8-be35-67f9ac1e3a60/section/a8eccb81-e950-4760-ba93-38e0b1f2b9d0#ch18" target="_blank">Debates in the Digital Humanities 2019</a>. When I think of modern music history archives, I think of something that isn't like the archives of old, that isn't tied to the past, isn't driven by a white, euro-centric view of culture, heritage, and art. Modern music, in particular hip-hop and electronic music, have taught me to be dynamic, reflexive, and contributive. That is what should be reflected in any effort to capture the historical importance of these modern music movements and people like Yancey who helped make them so vibrant and inspiring. As Ward and Wisnicki put it, reflecting on efforts at archival disruption, any such approach must "ask archives not only to react to the past but also to engage with a different sort of activity altogether: to build archives that imagine the future as well as preserve the past."
+                  </p>There is a lot more to be said and to be honest I'm still learning, reading, and digesting. I do however want to end by touching on some invigorating ideas I came across in Megan Ward and Adrian S. Wisnicki's "The Archive After Theory", from <a href="https://dhdebates.gc.cuny.edu/read/untitled-f2acf72c-a469-49d8-be35-67f9ac1e3a60/section/a8eccb81-e950-4760-ba93-38e0b1f2b9d0#ch18" target="_blank">Debates in the Digital Humanities 2019</a>. When I think of modern music history archives, I think of something that isn't like the archives of old, that isn't tied to the past, isn't driven by a white, euro-centric view of culture, heritage, and art. Modern music, in particular hip-hop and electronic music, have taught me to be dynamic, reflexive, and contributive. That is what should be reflected in any effort to capture the historical importance of these modern music movements and people like Yancey who helped make them so vibrant and inspiring. As Ward and Wisnicki put it, reflecting on efforts at archival disruption, any such approach must "ask archives not only to react to the past but also to engage with a different sort of activity altogether: to build archives that imagine the future as well as preserve the past."</p>
                   <p>
                     If you made it this far thank you for reading! If you want to talk more you can find me online (I'm the only person in the world with my name so you won't get anyone else). 
                   </p>
@@ -186,9 +190,11 @@
         
       </main>
       
-      <footer class="mt-auto text-50 text-center">
-        <p class="small">A project by <a href="https://twitter.com/laurent_fintoni" class="text-blue" target="_blank">@laurent_fintoni</a> for the Knowledge Organisation and Cultural Heritage course, University of Bologna 2021</p>
+      <div class="footer-container pt-3 d-flex w-100 h-100 mx-auto">
+        <footer class="mt-auto text-white-50 text-center">
+        <p class="small">A project by <a href="https://twitter.com/laurent_fintoni" class="text-white" target="_blank">@laurent_fintoni</a> for the Knowledge Organisation and Cultural Heritage course, University of Bologna 2021. All photographs of J Dilla by <a href="http://www.mochilla.com/bplus" target="_blank" class="text-white">Brian Cross</a> unless otherwise specified</p>
       </footer>
+    </div> 
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
